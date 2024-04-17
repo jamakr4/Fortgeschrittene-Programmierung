@@ -1,0 +1,12 @@
+table, th, td {
+    border: 1px solid;
+  }
+
+th{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    color:blue;
+    background-color: blueviolet;
+}
+
+  

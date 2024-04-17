@@ -8,22 +8,31 @@
 <body>
 
     <header> 
-        <h1>FP-Blog</h1><br>         <!-- Überschrift -->
-    </header>
+        <h1><a href="index.html">FP Blog </a></h1><br>         <!-- Überschrift -->
+    </header>   
 
-    <aside style="float: right; width: 200px; margin-left: 20px;">          <!-- Seitenleiste -->
+    <main>
+        <a href="artikelNeu.html" style="font-size: 25px;"><button>Neuen Artikel erstellen</button></a><br>
+        <iframe src="artikel.html" width="75%" height="500px"></iframe>               <!-- IFrame -->
+    </main>
+
+    <aside>          <!-- Seitenleiste -->
+        <h2>Seitenleiste</h2>
         <h3>Login</h3>
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required><br>
 
         <label for="email">E-Mail:</label><br>
+
+    <form action="">
         <input type="email" id="email" name="email" required><br>
         <button style="font: size 25px;;">Anmelden</button><br><br>
+    </form>
 
-        <form action="/suchen" method="get"></form>
+    <form action="/suchen" method="get"></form>
             <input type="text" name="suchbegriff" placeholder="Suchbegriff eingeben...">
             <a href="suchergebnis.html" style="font-size: 25px;"><button>Suchen</button></a><br>
-        </form>
+    </form>
 
         <ul id="monateListe">
             <li><a href="monatsliste.html">Januar</a></li>
@@ -40,22 +49,16 @@
             <li><a href="monatsliste.html">Dezember</a></li>
         </ul>
 
-        <h4>Tag Cloud:</h4>
-        <h6><a href="tagliste.html"> #div</a> <br>
-            <a href="tagliste.html">#tutorial</a> <br>
-            <a href="tagliste.html">#coding</a></a></h6> 
+        <h4>Tag Cloud:
+        <a href="tagliste.html"> #div</a> |
+        <a href="tagliste.html">#tutorial</a> |
+        <a href="tagliste.html">#coding</a></a></h4> 
     </aside>
-
-    <main>
-        <a href="artikelNeu.html" style="font-size: 25px;"><button>Neuen Artikel erstellen</button></a><br>
-        <iframe src="artikel.html" width="75%" height="500px"></iframe>               <!-- IFrame -->
-    </main>
 
     <footer>
         <hr>
         <a href="impressum.html">Impressum</a>
         <a href="kontakt.html">Kontakt</a>
     </footer>
-
 </body>
 </html>

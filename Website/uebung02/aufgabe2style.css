@@ -1,5 +1,5 @@
 table, th, td {
-    border: 1px solid;
+    border: 1px solid;            /* Linien einfügen */
   }
 
 th{
@@ -9,90 +9,140 @@ th{
     background-color: blueviolet;
 }
 
-tr:nth-child(2) td:nth-child(1){
+tr:nth-child(2) td:nth-child(1)
+{                                        /* 2. Spalte 1. zeile */
+    padding-top: 10px;
+    padding-right: 20px;                 /* padding = Innenabstände */
+    padding-bottom: 15px;
+    padding-left: 25px;
     background-color: aqua;
 }
-tr:nth-child(2) td:nth-child(2){
+tr:nth-child(2) td:nth-child(2)
+{
+    padding-top: 10px;
+    padding-right: 20px;                
+    padding-bottom: 15px;
+    padding-left: 25px;
     background-color: red;
 }
-tr:nth-child(2) td:nth-child(3){
+tr:nth-child(2) td:nth-child(3)
+{
+    padding-top: 10px;
+    padding-right: 20px;                
+    padding-bottom: 15px;
+    padding-left: 25px;
     background-color: brown;
 }
-tr:nth-child(2) td:nth-child(4){
+tr:nth-child(2) td:nth-child(4)
+{
+    padding-top: 10px;
+    padding-right: 20px;                
+    padding-bottom: 15px;
+    padding-left: 25px;
     background-color: burlywood;
 }
-tr:nth-child(2) td:nth-child(5){
+tr:nth-child(2) td:nth-child(5)
+{
+    padding-top: 10px;
+    padding-right: 20px;                
+    padding-bottom: 15px;
+    padding-left: 25px;
     background-color: green;
 }
 
 
 
-tr:nth-child(3) td:nth-child(1){
+tr:nth-child(3) td:nth-child(1)
+{
+    margin-top: 10px;
+    margin-right: 20px;                    /* margin = Außenabstände */
+    margin-bottom: 15px;
+    margin-left: 25px;
     background-color: chartreuse;
 }
-tr:nth-child(3) td:nth-child(2){
+tr:nth-child(3) td:nth-child(2)
+{
     background-color: yellow;
 }
-tr:nth-child(3) td:nth-child(3){
+tr:nth-child(3) td:nth-child(3)
+{
     background-color: goldenrod;
 }
-tr:nth-child(3) td:nth-child(4){
+tr:nth-child(3) td:nth-child(4)
+{
     background-color: hotpink;
 }
-tr:nth-child(3) td:nth-child(5){
+tr:nth-child(3) td:nth-child(5)
+{
     background-color: rebeccapurple;
 }
 
 
 
-tr:nth-child(4) td:nth-child(1){
+tr:nth-child(4) td:nth-child(1)
+{
     background-color: firebrick;
 }
-tr:nth-child(4) td:nth-child(2){
+tr:nth-child(4) td:nth-child(2)
+{
     background-color: fuchsia;
 }
-tr:nth-child(4) td:nth-child(3){
+tr:nth-child(4) td:nth-child(3)
+{
     background-color: forestgreen;
 }
-tr:nth-child(4) td:nth-child(4){
+tr:nth-child(4) td:nth-child(4)
+{
     background-color: gold;
 }
-tr:nth-child(4) td:nth-child(5){
+tr:nth-child(4) td:nth-child(5)
+{
     background-color: grey;
 }
 
 
 
-tr:nth-child(5) td:nth-child(1){
+tr:nth-child(5) td:nth-child(1)
+{
     background-color: indianred;
 }
-tr:nth-child(5) td:nth-child(2){
+tr:nth-child(5) td:nth-child(2)
+{
     background-color: indigo;
 }
-tr:nth-child(5) td:nth-child(3){
+tr:nth-child(5) td:nth-child(3)
+{
     background-color: olive;
 }
-tr:nth-child(5) td:nth-child(4){
+tr:nth-child(5) td:nth-child(4)
+{
     background-color: orchid;
 }
-tr:nth-child(5) td:nth-child(5){
+tr:nth-child(5) td:nth-child(5)
+{
     background-color: khaki;
 }
 
 
 
-tr:nth-child(6) td:nth-child(1){
+tr:nth-child(6) td:nth-child(1)
+{
+    
     background-color: firebrick;
 }
-tr:nth-child(6) td:nth-child(2){
+tr:nth-child(6) td:nth-child(2)
+{
     background-color: fuchsia;
 }
-tr:nth-child(6) td:nth-child(3){
+tr:nth-child(6) td:nth-child(3)
+{
     background-color: forestgreen;
 }
-tr:nth-child(6) td:nth-child(4){
+tr:nth-child(6) td:nth-child(4)
+{
     background-color: gold;
 }
-tr:nth-child(6) td:nth-child(5){
+tr:nth-child(6) td:nth-child(5)
+{
     background-color: grey;
 }

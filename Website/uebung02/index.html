@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header> 
+        <h1>FP-Blog</h1><br>         <!-- Überschrift -->
+    </header>
+
+    <aside style="float: right; width: 200px; margin-left: 20px;">          <!-- Seitenleiste -->
+        <h3>Login</h3>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">E-Mail:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <button style="font: size 25px;;">Anmelden</button><br><br>
+
+        <form action="/suchen" method="get"></form>
+            <input type="text" name="suchbegriff" placeholder="Suchbegriff eingeben...">
+            <a href="suchergebnis.html" style="font-size: 25px;"><button>Suchen</button></a><br>
+        </form>
+
+        <ul id="monateListe">
+            <li><a href="monatsliste.html">Januar</a></li>
+            <li><a href="monatsliste.html">Februar</a></li>
+            <li><a href="monatsliste.html">März</a></li>
+            <li><a href="monatsliste.html">April</a></li>
+            <li><a href="monatsliste.html">Mai</a></li>
+            <li><a href="monatsliste.html">Juni</a></li>
+            <li><a href="monatsliste.html">Juli</a></li>
+            <li><a href="monatsliste.html">August</a></li>
+            <li><a href="monatsliste.html">September</a></li>
+            <li><a href="monatsliste.html">Oktober</a></li>
+            <li><a href="monatsliste.html">November</a></li>
+            <li><a href="monatsliste.html">Dezember</a></li>
+        </ul>
+
+        <h4>Tag Cloud:</h4>
+        <h6><a href="tagliste.html"> #div</a> <br>
+            <a href="tagliste.html">#tutorial</a> <br>
+            <a href="tagliste.html">#coding</a></a></h6> 
+    </aside>
+
+    <main>
+        <a href="artikelNeu.html" style="font-size: 25px;"><button>Neuen Artikel erstellen</button></a><br>
+        <iframe src="artikel.html" width="75%" height="500px"></iframe>               <!-- IFrame -->
+    </main>
+
+    <footer>
+        <hr>
+        <a href="impressum.html">Impressum</a>
+        <a href="kontakt.html">Kontakt</a>
+    </footer>
+
+</body>
+</html>

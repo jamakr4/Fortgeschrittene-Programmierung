@@ -9,4 +9,90 @@ th{
     background-color: blueviolet;
 }
 
-  
+tr:nth-child(2) td:nth-child(1){
+    background-color: aqua;
+}
+tr:nth-child(2) td:nth-child(2){
+    background-color: red;
+}
+tr:nth-child(2) td:nth-child(3){
+    background-color: brown;
+}
+tr:nth-child(2) td:nth-child(4){
+    background-color: burlywood;
+}
+tr:nth-child(2) td:nth-child(5){
+    background-color: green;
+}
+
+
+
+tr:nth-child(3) td:nth-child(1){
+    background-color: chartreuse;
+}
+tr:nth-child(3) td:nth-child(2){
+    background-color: yellow;
+}
+tr:nth-child(3) td:nth-child(3){
+    background-color: goldenrod;
+}
+tr:nth-child(3) td:nth-child(4){
+    background-color: hotpink;
+}
+tr:nth-child(3) td:nth-child(5){
+    background-color: rebeccapurple;
+}
+
+
+
+tr:nth-child(4) td:nth-child(1){
+    background-color: firebrick;
+}
+tr:nth-child(4) td:nth-child(2){
+    background-color: fuchsia;
+}
+tr:nth-child(4) td:nth-child(3){
+    background-color: forestgreen;
+}
+tr:nth-child(4) td:nth-child(4){
+    background-color: gold;
+}
+tr:nth-child(4) td:nth-child(5){
+    background-color: grey;
+}
+
+
+
+tr:nth-child(5) td:nth-child(1){
+    background-color: indianred;
+}
+tr:nth-child(5) td:nth-child(2){
+    background-color: indigo;
+}
+tr:nth-child(5) td:nth-child(3){
+    background-color: olive;
+}
+tr:nth-child(5) td:nth-child(4){
+    background-color: orchid;
+}
+tr:nth-child(5) td:nth-child(5){
+    background-color: khaki;
+}
+
+
+
+tr:nth-child(6) td:nth-child(1){
+    background-color: firebrick;
+}
+tr:nth-child(6) td:nth-child(2){
+    background-color: fuchsia;
+}
+tr:nth-child(6) td:nth-child(3){
+    background-color: forestgreen;
+}
+tr:nth-child(6) td:nth-child(4){
+    background-color: gold;
+}
+tr:nth-child(6) td:nth-child(5){
+    background-color: grey;
+}

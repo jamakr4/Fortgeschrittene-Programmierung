@@ -1,4 +1,7 @@
 div{
+    position: relative;
+    top: 100px; 
+    left: 250px;
     width: 100px;
     height: 200px;
     background-color: blue;
@@ -6,8 +9,7 @@ div{
 
 div:hover
 {
-    transition: width 2s, height 2s, background-color 2s;
-    width: 200px;
-    height: 100px;
+    transition: rotate 2s, background-color 2s;
+    rotate: 90deg;
     background-color: red;
 }

@@ -1,5 +1,12 @@
 span{
-border-radius: 25px;
+  border-radius: 10%;
   background: #73AD21;
-  padding: 5px;
+  
 }
+
+#span2{       /* ansteuern über id */
+    border-radius: 40%;
+    background: red;
+    
+  }
+

@@ -23,76 +23,132 @@
 
       <br>
 
+      <main>
+
     <form action="">
-        <label for="fname">Überschrift</label>   
-        <input type="text" id="ueberschrift" name="ueberschrift" placeholder="Mein toller Artikel" required>
+
+
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">Überschrift</label>
+        </div>
+        <div class="col-auto">
+          <input type="text"  class="form-control">
+        </div>
+        <div class="col-auto">
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">Autor</label>
+        </div>
+        <div class="col-auto">
+          <input type="text"  class="form-control">
+        </div>
+        <div class="col-auto">
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">Datum</label>
+        </div>
+        <div class="col-auto">
+          <input type="date"  class="form-control">
+        </div>
+        <div class="col-auto">
+        </div>
+      </div>
 
         <br><br>
 
-        <label for="fname">Autor</label>   
-        <input type="text" id="autor" name="autor" placeholder="Donald Duck" required>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Teaser Text</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <div>
+            <label for="exampleFormControlTextarea1" class="form-label">Artikel</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+          </div>
 
         <br><br>
 
-        <label for="date">Datum</label>
-        <input type="date" id="date" name="date" required>
 
-        <br><br>
+        <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="inputPassword6" class="col-form-label">Tags</label>
+          </div>
+          <div class="col-auto">
+            <input type="text"  class="form-control">
+          </div>
+          <div class="col-auto">
+            <button type="button" class="btn btn-primary">Senden</button>
+          </div>
+        </div>
+        
 
-        <label for="teaser">Teaser Text:
-        <textarea id="teaser" name="teaser" cols="60" rows="5" placeholder="Das wichtigste kurz & knapp"></textarea>
-
-        <br><br>
-
-        <label for="artikel">Artikel Text:
-        <textarea id="artikel" name="artikel" cols="60" rows="25" placeholder="Was haben sie der Welt mitzuteilen?"></textarea>
-
-        <br><br>
-
-        <label for="tags">Tags</label>   
-        <input type="text" id="tags" name="tags">
-
-         <a href="index.html" style="font-size: 25px;"><button>Senden</button></a><br>
+         
     </form> 
+</main>
 
-    <aside>          <!-- Seitenleiste -->
-        <h2>Seitenleiste</h2>
-        <h3>Login</h3>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
+<aside>          <!-- Seitenleiste -->
+    <h3>Seitenleiste</h3>
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email Adresse</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Passwort</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Einloggen</button>
+      </form>
 
-        <label for="email">E-Mail:</label><br>
+      <br>
 
-    <form action="">
-        <input type="email" id="email" name="email" required><br>
-        <button style="font: size 25px;;">Anmelden</button><br><br>
-    </form>
+<form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Suchen" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Suchen</button>
+  </form>
 
-    <form action="/suchen" method="get"></form>
-            <input type="text" name="suchbegriff" placeholder="Suchbegriff eingeben...">
-            <a href="suchergebnis.html" style="font-size: 25px;"><button>Suchen</button></a><br>
-    </form>
+  <br>
 
-        <ul id="monateListe">
-            <li><a href="monatsliste.html">Januar</a></li>
-            <li><a href="monatsliste.html">Februar</a></li>
-            <li><a href="monatsliste.html">März</a></li>
-            <li><a href="monatsliste.html">April</a></li>
-            <li><a href="monatsliste.html">Mai</a></li>
-            <li><a href="monatsliste.html">Juni</a></li>
-            <li><a href="monatsliste.html">Juli</a></li>
-            <li><a href="monatsliste.html">August</a></li>
-            <li><a href="monatsliste.html">September</a></li>
-            <li><a href="monatsliste.html">Oktober</a></li>
-            <li><a href="monatsliste.html">November</a></li>
-            <li><a href="monatsliste.html">Dezember</a></li>
-        </ul>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Monatsliste
+    </button>
+    <ul class="dropdown-menu">
+      <li><button class="dropdown-item" type="button">Januar</button></li>
+      <li><button class="dropdown-item" type="button">Februar</button></li>
+      <li><button class="dropdown-item" type="button">März</button></li>
+      <li><button class="dropdown-item" type="button">April</button></li>
+      <li><button class="dropdown-item" type="button">Mai</button></li>
+      <li><button class="dropdown-item" type="button">Juni</button></li>
+      <li><button class="dropdown-item" type="button">Juli</button></li>
+      <li><button class="dropdown-item" type="button">August</button></li>
+      <li><button class="dropdown-item" type="button">September</button></li>
+      <li><button class="dropdown-item" type="button">Oktober</button></li>
+      <li><button class="dropdown-item" type="button">November</button></li>
+      <li><button class="dropdown-item" type="button">Dezember</button></li>
+    </ul>
+  </div>
 
-        <h4>Tag Cloud:
-        <a href="tagliste.html"> #div</a> |
-        <a href="tagliste.html">#tutorial</a> |
-        <a href="tagliste.html">#coding</a></a></h4> 
-    </aside>
+ <br>
+
+  <div>
+    <h5>Tag Cloud:
+    <a href="tagliste.html"> #div</a> |
+    <a href="tagliste.html">#tutorial</a> |
+    <a href="tagliste.html">#coding</a></a></h5> 
+</div>
+</aside>
 
     <footer>
         <a href="impressum.html">Impressum</a>

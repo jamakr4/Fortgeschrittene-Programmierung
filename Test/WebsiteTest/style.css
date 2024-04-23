@@ -1,0 +1,73 @@
+  header{
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px;
+  }
+
+  footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; 
+    padding: 10px; 
+    text-align: center; 
+
+  }
+
+  #b{
+    float: right;
+    width: 5vw; /* 5% der Bildschirmbreite */
+  margin-top: 8vh ;
+  margin-right: 2vw;
+
+  }
+
+  @media (max-width: 767px) { /* Wenn die Bildschirmbreite kleiner als 768px ist (Handyansicht) */
+    aside {
+        position: fixed; /* Fixiere das Element */
+        bottom: 0; /* Positioniere es am unteren Bildschirmrand */
+        left: 0; /* Positioniere es links */
+        width: 100%; /* Vollständige Bildschirmbreite */
+        background-color: #f8f9fa; /* Hintergrundfarbe */
+        padding: 10px 0; /* Abstand oben und unten */
+        text-align: center; /* Zentrierter Text */
+    }
+}
+
+aside {
+  float: right;
+  width: 5vw; /* 5% der Bildschirmbreite */
+  margin-top: 8vh ;
+  margin-right: 8vw; /* 4% der Bildschirmbreite */
+}
+
+main {
+  float: left;
+  width: 70%; /* Anpassen je nach gewünschter Breite */
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+
+.fade-out {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#b{
+
+  display: none;
+}

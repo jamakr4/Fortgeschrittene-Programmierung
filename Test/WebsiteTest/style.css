@@ -44,6 +44,8 @@ aside {
   margin-right: 8vw; /* 4% der Bildschirmbreite */
 }
 
+
+
 main {
   float: left;
   width: 70%; /* Anpassen je nach gewünschter Breite */
@@ -71,3 +73,4 @@ main {
 
   display: none;
 }
+

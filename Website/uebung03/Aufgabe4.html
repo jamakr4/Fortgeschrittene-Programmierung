@@ -44,8 +44,8 @@
             // Überprüfen Sie die Grenzen von box1
             const box1Left = box1.offsetLeft;
             const box1Top = box1.offsetTop;
-            const box1Right = box1Left + box1.offsetWidth;
-            const box1Bottom = box1Top + box1.offsetHeight;
+            const box1Right = box1Left + box1.offsetWidth-30;
+            const box1Bottom = box1Top + box1.offsetHeight-30;
 
             if (mouseX >= box1Left && mouseX <= box1Right && mouseY >= box1Top && mouseY <= box1Bottom) {
                 // Die Maus ist innerhalb der Grenzen von box1

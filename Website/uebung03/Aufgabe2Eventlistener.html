@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #box{
+        width: 100px;
+        height: 100px;
+        background: black;
+    }
+
+    #box2{
+        width: 100px;
+        height: 100px;
+        background: black;
+    }
+
+    #box3{
+        width: 100px;
+        height: 100px;
+        background: black;
+    }
+
+    #box4{
+        width: 100px;
+        height: 100px;
+        background: black;
+    }
+</style>
+
+<body> 
+    Hover drüber
+    <div id="box"></div>
+    <br><br>
+    Klick mich
+    <div id="box2"></div>
+    <br><br>
+    Verlass mich
+    <div id="box3"></div>
+    <br><br>
+    Rechtsklick mich 
+    <div id="box4"></div>
+    
+
+    <script>
+        const boxDiv = document.getElementById("box");
+        boxDiv.addEventListener("mouseover", function(e){ 
+        boxDiv.style.backgroundColor = "red";                                 
+        });
+
+        const boxDiv2 = document.getElementById("box2");
+        boxDiv2.addEventListener("click", function(e){ 
+        boxDiv2.style.backgroundColor = "red";                                 
+        });
+
+        const boxDiv3 = document.getElementById("box3");
+        boxDiv3.addEventListener("mouseout", function(e){ 
+        boxDiv3.style.backgroundColor = "red";                                 
+        });
+
+        const boxDiv4 = document.getElementById("box4");
+        boxDiv4.addEventListener("contextmenu", function(e){ 
+        boxDiv4.style.backgroundColor = "red";                                 
+        });
+        
+    </script>
+    
+</body>
+
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        #box1 {
+            width: 600px;
+            height: 400px;
+            background: black;
+            position: relative;
+        }
+
+        #box2 {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            position: absolute;
+            transition: left 0.4s, top 0.4s; /* Reduced transition time for smoother movement */
+        }
+    </style>
+</head>
+<body>
+
+<div id="box1">
+    <div id="box2"></div>
+</div>
+
+<script>
+    const box1 = document.getElementById("box1");
+    const box2 = document.getElementById("box2");
+
+    // Event-Listener für das Klicken auf box1 hinzufügen
+    box1.addEventListener("click", function(e) {
+        // Event-Listener für die Mausbewegung hinzufügen, nachdem auf box1 geklickt wurde
+        document.addEventListener("mousemove", function(event) {
+            const mouseX = event.pageX;
+            const mouseY = event.pageY;
+
+            // Überprüfen Sie die Grenzen von box1
+            const box1Left = box1.offsetLeft;
+            const box1Top = box1.offsetTop;
+            const box1Right = box1Left + box1.offsetWidth;
+            const box1Bottom = box1Top + box1.offsetHeight;
+
+            if (mouseX >= box1Left && mouseX <= box1Right && mouseY >= box1Top && mouseY <= box1Bottom) {
+                // Die Maus ist innerhalb der Grenzen von box1
+                box2.style.left = mouseX - box1Left + 'px';
+                box2.style.top = mouseY - box1Top + 'px';
+            }
+        });
+
+       
+    });
+</script>
+
+
+    
+</body>
+</html>

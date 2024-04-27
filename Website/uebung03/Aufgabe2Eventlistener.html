@@ -30,6 +30,20 @@
         height: 100px;
         background: black;
     }
+
+    #box5{
+        width: 200px;
+        height: 100px;
+        background: black;
+        transition: 2s;
+    }
+
+    #box6{
+        width: 200px;
+        height: 100px;
+        background: black;
+        transition: 2s;
+    }
 </style>
 
 <body> 
@@ -45,7 +59,13 @@
     Rechtsklick mich 
     <div id="box4"></div>
     <br> <br>
-    <button id="b" type="submit">Klick mich</button>
+    <button id="b" type="submit">Klick mich mit Links</button>
+    <br><br>
+    <button id="b2" type="submit">Klick mich mit Rechts</button>
+    <br><br>
+    <div id="box5"></div>
+    <br><br>
+    <div id="box6"></div>
     
 
     <script>
@@ -73,6 +93,22 @@
         b1.addEventListener("click", function(e){ 
             e.preventDefault(); // Verhindert das aktualisieren der Seite
             alert('Du hast mich angeklickt');                               
+        });
+
+        const b2 = document.getElementById("b2");
+        b2.addEventListener("contextmenu", function(e){ 
+            e.preventDefault(); // Verhindert das aktualisieren der Seite
+            alert('Du hast mich mit Rechts angeklickt');                               
+        });
+
+        const boxDiv5 = document.getElementById("box5");
+        boxDiv5.addEventListener("click", function(e){ 
+        boxDiv5.style.transform = "rotate(90deg)";                                 
+        });
+
+        const boxDiv6 = document.getElementById("box6");
+        boxDiv6.addEventListener("click", function(e){ 
+        boxDiv6.style.width = "20px";                                 
         });
         
     </script>

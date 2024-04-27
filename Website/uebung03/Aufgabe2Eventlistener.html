@@ -44,6 +44,8 @@
     <br><br>
     Rechtsklick mich 
     <div id="box4"></div>
+    <br> <br>
+    <button id="b" type="submit">Klick mich</button>
     
 
     <script>
@@ -65,6 +67,12 @@
         const boxDiv4 = document.getElementById("box4");
         boxDiv4.addEventListener("contextmenu", function(e){ 
         boxDiv4.style.backgroundColor = "red";                                 
+        });
+
+        const b1 = document.getElementById("b");
+        b1.addEventListener("click", function(e){ 
+            e.preventDefault(); // Verhindert das aktualisieren der Seite
+            alert('Du hast mich angeklickt');                               
         });
         
     </script>

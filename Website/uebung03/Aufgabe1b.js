@@ -11,4 +11,3 @@ if(x + 1 == y + 1)
     console.log("richtig2");
 } 
 
-console.log (y+1);

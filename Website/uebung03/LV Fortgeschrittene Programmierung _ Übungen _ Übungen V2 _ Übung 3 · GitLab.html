@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3 -->
+<html class="ui-light-gray with-top-bar " lang="en"><head prefix="og: http://ogp.me/ns#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<title>LV Fortgeschrittene Programmierung / Übungen / Übungen V2 / Übung 3 · GitLab</title>
+<script>
+//<![CDATA[
+window.gon={};gon.api_version="v4";gon.default_avatar_url="https://gitlab.hsrw.eu/assets/no_avatar-849f9c04a3a0d0cea2424ae97b27447dc64a7dbfae83c036c45b403392f0e8ba.png";gon.max_file_size=100;gon.asset_host=null;gon.webpack_public_path="/assets/webpack/";gon.relative_url_root="";gon.user_color_scheme="white";gon.markdown_surround_selection=true;gon.markdown_automatic_lists=true;gon.math_rendering_limits_enabled=true;gon.recaptcha_api_server_url="https://www.recaptcha.net/recaptcha/api.js";gon.recaptcha_sitekey=null;gon.gitlab_url="https://gitlab.hsrw.eu";gon.revision="69201047f89";gon.feature_category="groups_and_projects";gon.gitlab_logo="/assets/gitlab_logo-2957169c8ef64c58616a1ac3f4fc626e8a35ce4eb3ed31bb0d873712f2a041a0.png";gon.secure=true;gon.sprite_icons="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg";gon.sprite_file_icons="/assets/file_icons/file_icons-7cd3d6c3b29a6d972895f36472978a4b5adb4b37f9b5d0716a380e82389f7e0e.svg";gon.emoji_sprites_css_path="/assets/emoji_sprites-e1b1ba2d7a86a445dcb1110d1b6e7dd0200ecaa993a445df77a07537dbf8f475.css";gon.gridstack_css_path="/assets/lazy_bundles/gridstack-c6181c05f8ebc9dacc63a18b4f803c03b6636d5e5cedb9220dc5928d0ed83a89.css";gon.test_env=false;gon.disable_animations=false;gon.suggested_label_colors={"#cc338b":"Magenta-pink","#dc143c":"Crimson","#c21e56":"Rose red","#cd5b45":"Dark coral","#ed9121":"Carrot orange","#eee600":"Titanium yellow","#009966":"Green-cyan","#8fbc8f":"Dark sea green","#6699cc":"Blue-gray","#e6e6fa":"Lavender","#9400d3":"Dark violet","#330066":"Deep violet","#36454f":"Charcoal grey","#808080":"Gray"};gon.first_day_of_week=1;gon.time_display_relative=true;gon.time_display_format=0;gon.ee=false;gon.jh=false;gon.dot_com=false;gon.uf_error_prefix="UF";gon.pat_prefix="";gon.keyboard_shortcuts_enabled=true;gon.diagramsnet_url="https://embed.diagrams.net";gon.version="16.9.4";gon.current_user_id=938;gon.current_username="33247";gon.current_user_fullname="Krausch, Jan-Martin";gon.current_user_avatar_url="https://gravatar.com/avatar/b43ad3b31eebe2dc4189ce0427c48513ffc7324263baad888d3604b85571e319?s=80\u0026d=retro";gon.features={"usageDataApi":true,"securityAutoFix":false,"sourceEditorToolbar":false,"vscodeWebIde":true,"uiForOrganizations":false,"removeMonitorMetrics":true,"encodingLogsTree":false,"groupUserSaml":false,"explainCodeChat":false,"issueEmailParticipants":false,"addBranchRule":false,"pageSpecificStyles":false,"workItems":true,"workItemsMvc":false,"workItemsMvc2":false,"linkedWorkItems":true};
+//]]>
+</script>
+<script>
+//<![CDATA[
+window.uploads_path = "/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/uploads";
+
+
+
+//]]>
+</script>
+
+
+
+
+<link rel="stylesheet" href="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/application-9723ad2290324a6ed951c5d4b011743f27afa0b6450cb147a63587b67b70985a.css" media="all">
+<link rel="stylesheet" href="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/project-efa2881c28afe4ddd175bd20fd12c81fb3e69052b7eaad9b4c4d37b817bcc279.css" media="all"><link rel="stylesheet" href="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/tree-a5089dc5ce426c5f11ae90f6dc4a5b0be7ec204192f87d6438b0500eaf370d7c.css" media="all">
+<link rel="stylesheet" href="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/application_utilities-6e14369d68c173a17203053e264fd8034cea02c72b03d7d20c142f2e8b2ba2b8.css" media="all">
+
+
+<link rel="stylesheet" href="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/fonts-115c4704cb8c77e2fdf3fd0243eebf164e2e9b54bbab7bf6a4c14868b865ddf8.css" media="all">
+<link rel="stylesheet" href="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/white-a6bcb4c616fa83a68bf0d7936411ba4d47fa78c1137817cc6ebdb97e656c6eb5.css" media="all">
+
+
+<link rel="preload" href="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/application_utilities-6e14369d68c173a17203053e264fd8034cea02c72b03d7d20c142f2e8b2ba2b8.css" as="style" type="text/css">
+<link rel="preload" href="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/application-9723ad2290324a6ed951c5d4b011743f27afa0b6450cb147a63587b67b70985a.css" as="style" type="text/css">
+<link rel="preload" href="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/white-a6bcb4c616fa83a68bf0d7936411ba4d47fa78c1137817cc6ebdb97e656c6eb5.css" as="style" type="text/css">
+
+
+
+
+
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/runtime.4fd24bfa.bundle.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/main.97cf6583.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/graphql.e1f11a07.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/commons-pages.search.show-super_sidebar.d7dcdf5a.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/super_sidebar.ee3b8682.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/commons-jira_connect_app-pages.abuse_reports-pages.admin.abuse_reports.show-pages.admin.application_-e922387a.7972a619.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/commons-pages.admin.abuse_reports-pages.admin.abuse_reports.show-pages.admin.application_settings-pa-3b71c5de.87edeb5d.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/commons-pages.admin.runners.show-pages.clusters.agents.dashboard-pages.explore.catalog-pages.groups.-c4cc2bc1.e6aae721.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/commons-pages.projects.blob.show-pages.projects.branches.new-pages.projects.commits.show-pages.proje-81161c0b.f1c749a1.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/commons-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.edit-pages.projects.sni-42df7d4c.515a56c4.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/commons-pages.groups.show-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.show--90d3b3a3.dd9f64a8.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/commons-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.show-pages.projects.tre-c684fcf6.0702cfee.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/commons-pages.projects.blame.show-pages.projects.blame.streaming-pages.projects.blob.show-pages.proj-9f3d272f.2423e256.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/commons-pages.projects.blob.show-pages.projects.forks.new-pages.projects.show-pages.projects.tree.show.6475655f.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/commons-pages.groups.details-pages.groups.show-pages.profiles.notifications.show-pages.projects.show.dda8aa87.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/commons-pages.projects.blob.show-pages.projects.show-pages.projects.tree.show.720e0b88.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/commons-pages.projects.show-pages.projects.tree.show.9f2d5e55.chunk.js" defer="defer"></script>
+<script src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/pages.projects.show.8e60dd90.chunk.js" defer="defer"></script>
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="LV Fortgeschrittene Programmierung / Übungen / Übungen V2 / Übung 3 · GitLab" property="og:title">
+<meta content="GitLab des SoftLab HSRW" property="og:description">
+<meta content="https://gitlab.hsrw.eu/assets/twitter_card-570ddb06edf56a2312253c5872489847a0f385112ddbcd71ccfa1570febab5d2.jpg" property="og:image">
+<meta content="64" property="og:image:width">
+<meta content="64" property="og:image:height">
+<meta content="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="LV Fortgeschrittene Programmierung / Übungen / Übungen V2 / Übung 3 · GitLab" property="twitter:title">
+<meta content="GitLab des SoftLab HSRW" property="twitter:description">
+<meta content="https://gitlab.hsrw.eu/assets/twitter_card-570ddb06edf56a2312253c5872489847a0f385112ddbcd71ccfa1570febab5d2.jpg" property="twitter:image">
+
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="nLYCbmbPDAEEo_WjtLDVjyyOg0Yxoxs_hZauQVm8tu2WAlIeDg2eTEn04_Z02FaYZTvn_TQ1kZEl7rmjEqCxTg">
+<meta name="csp-nonce">
+<meta name="action-cable-url" content="/-/cable">
+<link href="https://gitlab.hsrw.eu/-/manifest.json" rel="manifest">
+<link rel="icon" type="image/png" href="https://gitlab.hsrw.eu/uploads/-/system/appearance/favicon/1/logo-gitlab-hsrw.png" id="favicon" data-original-href="/uploads/-/system/appearance/favicon/1/logo-gitlab-hsrw.png">
+<link rel="apple-touch-icon" type="image/x-icon" href="https://gitlab.hsrw.eu/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png">
+<link href="https://gitlab.hsrw.eu/search/opensearch.xml" rel="search" title="Search GitLab" type="application/opensearchdescription+xml">
+<link rel="alternate" type="application/atom+xml" title="Übung 3 activity" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3.atom?feed_token=glft-28837f0e981347b6de7f2462a4162ead534e2a4cddac81950832943e5935e02a-938">
+
+
+
+
+<meta content="GitLab des SoftLab HSRW" name="description">
+<meta content="#ececef" name="theme-color">
+<style>
+svg[data-v-03ba0632] {
+  pointer-events: none;
+
+  position: fixed;
+  right: 0;
+}
+svg polygon[data-v-03ba0632],
+svg rect[data-v-03ba0632] {
+  pointer-events: auto;
+}
+</style><script charset="utf-8" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/52.b4255151.chunk.js"></script><script charset="utf-8" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/vendors-global_search_modal.0efcf8b6.chunk.js"></script><script charset="utf-8" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/global_search_modal.3d58c5c1.chunk.js"></script><script charset="utf-8" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/110.5f2ea514.chunk.js"></script><script charset="utf-8" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/vendors-initGFMInput-statusModalBundle.60909be0.chunk.js"></script><script charset="utf-8" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/statusModalBundle.76047f26.chunk.js"></script><script charset="utf-8" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/shortcutsBundle.1076c523.chunk.js"></script><script charset="utf-8" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/hello.5a3a2982.chunk.js"></script><style>
+.fake-input[data-v-38c777e0] {
+  top: 14px;
+  left: 39px;
+}
+</style><script charset="utf-8" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/initInviteMembersTrigger.31758a4f.chunk.js"></script><script charset="utf-8" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/prosemirror.48448d1e.chunk.js"></script><script charset="utf-8" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/144.4ab6b246.chunk.js"></script><script charset="utf-8" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/vendors-gfm_copy_extra.145679a2.chunk.js"></script><script charset="utf-8" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/gfm_copy_extra.a36f1fd3.chunk.js"></script><style data-tiptap-style="">.ProseMirror {
+  position: relative;
+}
+
+.ProseMirror {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  white-space: break-spaces;
+  -webkit-font-variant-ligatures: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0; /* the above doesn't seem to work in Edge */
+}
+
+.ProseMirror [contenteditable="false"] {
+  white-space: normal;
+}
+
+.ProseMirror [contenteditable="false"] [contenteditable="true"] {
+  white-space: pre-wrap;
+}
+
+.ProseMirror pre {
+  white-space: pre-wrap;
+}
+
+img.ProseMirror-separator {
+  display: inline !important;
+  border: none !important;
+  margin: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+}
+
+.ProseMirror-gapcursor {
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  margin: 0;
+}
+
+.ProseMirror-gapcursor:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  width: 20px;
+  border-top: 1px solid black;
+  animation: ProseMirror-cursor-blink 1.1s steps(2, start) infinite;
+}
+
+@keyframes ProseMirror-cursor-blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.ProseMirror-hideselection *::selection {
+  background: transparent;
+}
+
+.ProseMirror-hideselection *::-moz-selection {
+  background: transparent;
+}
+
+.ProseMirror-hideselection * {
+  caret-color: transparent;
+}
+
+.ProseMirror-focused .ProseMirror-gapcursor {
+  display: block;
+}
+
+.tippy-box[data-animation=fade][data-state=hidden] {
+  opacity: 0
+}</style></head>
+
+<body class="tab-width-8 gl-browser-chrome gl-platform-mac page-initialised" data-group="uebungen-v2" data-group-full-path="lv-fortgeschrittene-programmierung/uebungen/uebungen-v2" data-namespace-id="2891" data-page="projects:show" data-page-type-id="uebung-3" data-project="uebung-3" data-project-id="2353">
+
+<script>
+//<![CDATA[
+gl = window.gl || {};
+gl.client = {"isChrome":true,"isMac":true};
+
+
+//]]>
+</script>
+
+
+
+<div class="layout-page page-with-super-sidebar page-with-super-sidebar-collapsed">
+<div><div class="super-sidebar-overlay"></div> <a data-testid="super-sidebar-skip-to" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3#content-body" class="btn super-sidebar-skip-to gl-sr-only-focusable gl-fixed gl-left-0 gl-m-3 btn-confirm btn-md gl-button"><!----> <!---->  <span class="gl-button-text">
+    Skip to main content
+  </span></a> <nav id="super-sidebar" aria-labelledby="super-sidebar-heading" data-testid="super-sidebar" class="super-sidebar super-sidebar-has-peeked" inert="inert"><h2 id="super-sidebar-heading" class="gl-sr-only">
+      Primary navigation
+    </h2> <div class="user-bar gl-display-flex gl-p-3 gl-gap-1 gl-flex-direction-column gl-gap-3"><div class="gl-display-flex gl-align-items-center gl-gap-1"><a href="https://gitlab.hsrw.eu/" data-track-action="click_link" data-track-label="gitlab_logo_link" data-track-property="nav_core_menu" class="brand-logo"><span class="gl-sr-only">Homepage</span> <img alt="" data-testid="brand-header-custom-logo" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/hsrw-gitlab-logo.svg" class="gl-h-6 gl-max-w-full"></a> <!----> <div class="gl-flex-grow-1"></div> <button aria-controls="super-sidebar" aria-expanded="true" aria-label="Primary navigation sidebar" type="button" class="btn btn-default btn-md gl-button btn-default-tertiary btn-icon js-super-sidebar-toggle-collapse" data-testid="super-sidebar-collapse-button"><!----> <svg data-testid="sidebar-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#sidebar"></use></svg>  <!----></button> <div class="gl-disclosure-dropdown gl-new-dropdown" data-testid="new-menu-toggle"><button id="create-menu-toggle" data-testid="base-dropdown-toggle" aria-controls="base-dropdown-2" aria-labelledby="create-menu-toggle" type="button" class="btn btn-default btn-md gl-button btn-default-tertiary gl-new-dropdown-toggle gl-new-dropdown-icon-only btn-icon gl-new-dropdown-toggle-no-caret"><!----> <svg data-testid="plus-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#plus"></use></svg>  <span class="gl-button-text"><span class="gl-new-dropdown-button-text gl-sr-only">
+        Create new...
+      </span> <!----></span></button> <div id="base-dropdown-2" data-testid="base-dropdown-menu" class="gl-new-dropdown-panel gl-w-31!"><div class="gl-new-dropdown-inner">  <ul id="disclosure-1" aria-labelledby="create-menu-toggle" data-testid="disclosure-content" tabindex="-1" class="gl-new-dropdown-contents"><li><div id="gl-disclosure-dropdown-group-3" aria-hidden="true" class="gl-pl-4 gl-py-2 gl-font-sm gl-font-weight-bold">In this project</div> <ul aria-labelledby="gl-disclosure-dropdown-group-3" class="gl-mb-0 gl-pl-0 gl-list-style-none"><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/issues/new" data-track-label="new_issue" data-track-action="click_link" data-track-property="nav_create_menu" data-testid="create_menu_item" data-qa-create-menu-item="new_issue" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper">
+          New issue
+        </span></a></li></ul></li><li class="gl-border-t gl-border-t-gray-200 gl-pt-2 gl-mt-2"><div id="gl-disclosure-dropdown-group-4" aria-hidden="true" class="gl-pl-4 gl-py-2 gl-font-sm gl-font-weight-bold">In GitLab</div> <ul aria-labelledby="gl-disclosure-dropdown-group-4" class="gl-mb-0 gl-pl-0 gl-list-style-none"><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://gitlab.hsrw.eu/projects/new" data-track-label="general_new_project" data-track-action="click_link" data-track-property="nav_create_menu" data-testid="create_menu_item" data-qa-create-menu-item="general_new_project" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper">
+          New project/repository
+        </span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://gitlab.hsrw.eu/-/snippets/new" data-track-label="general_new_snippet" data-track-action="click_link" data-track-property="nav_create_menu" data-testid="create_menu_item" data-qa-create-menu-item="general_new_snippet" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper">
+          New snippet
+        </span></a></li></ul></li></ul> </div></div></div> <div><div class="gl-disclosure-dropdown gl-new-dropdown" data-testid="user-dropdown"><div id="dropdown-toggle-btn-5" data-testid="base-dropdown-toggle" class="gl-new-dropdown-custom-toggle"><button data-testid="user-menu-toggle" type="button" class="btn user-bar-dropdown-toggle btn-with-notification btn-default btn-md gl-button btn-default-tertiary"><!----> <!---->  <span class="gl-button-text"><span class="gl-sr-only">Krausch, Jan-Martin user’s menu</span> <img src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/b43ad3b31eebe2dc4189ce0427c48513ffc7324263baad888d3604b85571e319" alt="avatar" class="gl-avatar gl-avatar-circle gl-avatar-s24" aria-hidden="true" data-testid="user-avatar-content"> <!----></span></button></div> <div id="base-dropdown-7" data-testid="base-dropdown-menu" class="gl-new-dropdown-panel gl-w-31!"><div class="gl-new-dropdown-inner">  <ul id="disclosure-6" aria-labelledby="dropdown-toggle-btn-5" data-testid="disclosure-content" tabindex="-1" class="gl-new-dropdown-contents"> <li><!----> <ul class="gl-mb-0 gl-pl-0 gl-list-style-none"><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://gitlab.hsrw.eu/33247" data-track-property="nav_user_menu" data-track-action="click_link" data-track-label="user_profile" data-testid="user-profile-link" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><span class="gl-display-flex gl-flex-direction-column"><span><span class="gl-font-weight-bold">
+          Krausch, Jan-Martin
+        </span> <!----></span> <span class="gl-text-gray-400 gl-word-break-all">@33247</span> <!----></span></span></a></li></ul></li> <li class="gl-border-t gl-border-t-gray-200 gl-pt-2 gl-mt-2"><!----> <ul class="gl-mb-0 gl-pl-0 gl-list-style-none"><li tabindex="0" data-testid="status-item" class="gl-new-dropdown-item" role="button"><button tabindex="-1" data-track-property="nav_user_menu" data-track-action="click_link" data-track-label="user_edit_status" type="button" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper">
+          Set status
+        </span></button></li> <!----> <li tabindex="0" data-testid="edit-profile-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://gitlab.hsrw.eu/-/user_settings/profile" data-testid="edit-profile-link" data-track-property="nav_user_menu" data-track-action="click_link" data-track-label="user_edit_profile" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper">
+          Edit profile
+        </span></a></li> <li tabindex="0" data-testid="preferences-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://gitlab.hsrw.eu/-/profile/preferences" data-track-property="nav_user_menu" data-track-action="click_link" data-track-label="user_preferences" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper">
+          Preferences
+        </span></a></li> <!----> <!----> <!----> <!----></ul></li> <li class="gl-border-t gl-border-t-gray-200 gl-pt-2 gl-mt-2" data-testid="sign-out-group"><!----> <ul class="gl-mb-0 gl-pl-0 gl-list-style-none"><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://gitlab.hsrw.eu/users/sign_out" data-method="post" data-testid="sign-out-link" class="gl-new-dropdown-item-content sign-out-link"><span class="gl-new-dropdown-item-text-wrapper">
+          Sign out
+        </span></a></li></ul></li></ul> </div></div></div> <!----></div> <!----></div> <!----> <div class="gl-display-flex gl-justify-content-space-between gl-gap-2"><a aria-label="Issues 0" href="https://gitlab.hsrw.eu/dashboard/issues?assignee_username=33247" class="user-bar-button gl-display-block gl-flex-grow-1 gl-text-center gl-py-3 gl-rounded-base gl-border-none gl-line-height-1 gl-font-sm gl-hover-text-decoration-none gl-flex-basis-third dashboard-shortcuts-issues" data-testid="issues-shortcut-button" data-track-action="click_link" data-track-label="issues_link" data-track-property="nav_core_menu"><svg data-testid="issues-icon" role="img" aria-hidden="true" class="gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#issues"></use></svg> <!----></a> <div class="gl-disclosure-dropdown gl-flex-basis-third gl-display-block! gl-new-dropdown"><div id="dropdown-toggle-btn-12" data-testid="base-dropdown-toggle" class="gl-new-dropdown-custom-toggle"><button aria-label="Merge requests 0" class="user-bar-button gl-display-block gl-flex-grow-1 gl-text-center gl-py-3 gl-rounded-base gl-border-none gl-line-height-1 gl-font-sm gl-hover-text-decoration-none gl-w-full" data-testid="merge-requests-shortcut-button" data-track-action="click_dropdown" data-track-label="merge_requests_menu" data-track-property="nav_core_menu"><svg data-testid="merge-request-open-icon" role="img" aria-hidden="true" class="gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#merge-request-open"></use></svg> <!----></button></div> <div id="base-dropdown-16" data-testid="base-dropdown-menu" class="gl-new-dropdown-panel gl-w-31!"><div class="gl-new-dropdown-inner">  <ul id="disclosure-13" aria-labelledby="dropdown-toggle-btn-12" data-testid="disclosure-content" tabindex="-1" class="gl-new-dropdown-contents"><li><div id="gl-disclosure-dropdown-group-17" aria-hidden="true" class="gl-pl-4 gl-py-2 gl-font-sm gl-font-weight-bold">Merge requests</div> <ul aria-labelledby="gl-disclosure-dropdown-group-17" class="gl-mb-0 gl-pl-0 gl-list-style-none"> <li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://gitlab.hsrw.eu/dashboard/merge_requests?assignee_username=33247" data-track-action="click_link" data-track-label="merge_requests_assigned" data-track-property="nav_core_menu" class="gl-new-dropdown-item-content dashboard-shortcuts-merge_requests"><span class="gl-new-dropdown-item-text-wrapper"><span class="gl-display-flex gl-align-items-center gl-justify-content-space-between">
+      Assigned
+      <span class="badge badge-neutral badge-pill gl-badge sm"><!----> 0</span></span></span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://gitlab.hsrw.eu/dashboard/merge_requests?reviewer_username=33247" data-track-action="click_link" data-track-label="merge_requests_to_review" data-track-property="nav_core_menu" class="gl-new-dropdown-item-content dashboard-shortcuts-review_requests"><span class="gl-new-dropdown-item-text-wrapper"><span class="gl-display-flex gl-align-items-center gl-justify-content-space-between">
+      Review requests
+      <span class="badge badge-neutral badge-pill gl-badge sm"><!----> 0</span></span></span></a></li></ul></li></ul> </div></div></div> <a aria-label="To-Do list 0" href="https://gitlab.hsrw.eu/dashboard/todos" class="user-bar-button gl-display-block gl-flex-grow-1 gl-text-center gl-py-3 gl-rounded-base gl-border-none gl-line-height-1 gl-font-sm gl-hover-text-decoration-none gl-flex-basis-third shortcuts-todos js-todos-count" data-testid="todos-shortcut-button" data-track-action="click_link" data-track-label="todos_link" data-track-property="nav_core_menu"><svg data-testid="todo-done-icon" role="img" aria-hidden="true" class="gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#todo-done"></use></svg> <!----></a></div> <button id="super-sidebar-search" data-testid="super-sidebar-search-button" class="user-bar-button gl-display-block gl-py-3 gl-bg-gray-10 gl-rounded-base gl-text-gray-900 gl-border-none gl-line-height-1 gl-w-full"><svg data-testid="search-icon" role="img" aria-hidden="true" class="gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#search"></use></svg>
+    Search or go to…
+  </button> <!----></div> <!----> <div class="contextual-nav gl-display-flex gl-flex-direction-column gl-flex-grow-1 gl-overflow-hidden"><div class="gl-scroll-scrim gl-overflow-auto gl-flex-grow-1" data-testid="nav-container"><div class="top-scrim-wrapper"><div class="top-scrim"></div></div> <div></div> <div id="super-sidebar-context-header" class="gl-px-5 gl-pt-3 gl-pb-2 gl-m-0 gl-reset-line-height gl-font-weight-bold gl-font-sm super-sidebar-context-header">
+          Project
+        </div> <div class="gl-p-2 gl-relative"><ul data-testid="static-items-section" class="gl-list-style-none gl-p-0 gl-m-0"><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3" aria-current="page" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control super-sidebar-nav-item-current gl-px-3 gl-rounded-base shortcuts-project" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="project_overview" data-track-property="nav_panel_project" data-qa-submenu-item="project-overview"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-10" style="width: 3px; border-radius: 3px; margin-right: 1px; transform: translateX(-1px);"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><div class="gl-avatar gl-avatar-identicon gl-avatar-s24 gl-avatar-identicon-bg2">
+  Ü
+</div></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Übung 3
+      <!----></div>  <!----></a> <!----></li></ul> <div><!----> <button id="menu-section-button-pinned" data-testid="menu-section-button" data-qa-section-name="Pinned" aria-controls="pinned" aria-expanded="true" data-qa-menu-item="Pinned" class="super-sidebar-nav-item gl-rounded-base gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-2 gl-py-2 gl-px-3 gl-text-black-normal! gl-text-decoration-none! gl-appearance-none gl-border-0 gl-bg-transparent gl-text-left gl-w-full gl-focus--focus"><span aria-hidden="true" class="gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-bg-transparent" style="width: 3px; border-radius: 3px; margin-right: 1px;"></span> <span class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="super-sidebar-nav-item-icon gl-m-auto gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack"></use></svg></span> <span class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Pinned
+    </span> <span class="gl-text-right gl-text-gray-400"><svg data-testid="chevron-up-icon" role="img" aria-hidden="true" class="gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#chevron-up"></use></svg></span></button> <!----> <div id="pinned" class="gl-list-style-none gl-p-0 gl-m-0 gl-transition-duration-medium gl-transition-timing-function-ease collapse show" data-testid="menu-section" data-qa-section-name="Pinned"><ul data-testid="pinned-nav-items" class="gl-p-0 gl-m-0 gl-list-style-none"><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/issues" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base shortcuts-issues has-sub-items" data-testid="nav-item-link" data-track-action="click_pinned_menu_item" data-track-label="project_issue_list" data-track-property="nav_panel_project" data-qa-submenu-item="Issues"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><svg data-testid="grip-icon" role="img" aria-hidden="true" class="gl-m-auto gl-text-gray-400 js-draggable-icon gl-cursor-grab show-on-focus-or-hover--target super-sidebar-mix-blend-mode gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#grip"></use></svg></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Issues
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><span class="badge badge-neutral badge-pill gl-badge sm hide-on-focus-or-hover--target transition-opacity-on-hover--target"><!----> 
+        0
+      </span></span></a> <button aria-label="Unpin Issues" data-testid="nav-item-unpin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-solid-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack-solid"></use></svg>  <!----></button></li></ul></div></div> <hr aria-hidden="true" data-testid="main-menu-separator" class="gl-my-2 gl-mx-4"> <ul aria-labelledby="super-sidebar-context-header" data-testid="non-static-items-section" class="gl-p-0 gl-mb-0 gl-list-style-none"><li><!----> <button id="menu-section-button-manage" data-testid="menu-section-button" data-qa-section-name="Manage" aria-controls="manage" aria-expanded="false" data-qa-menu-item="Manage" class="super-sidebar-nav-item gl-rounded-base gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-2 gl-py-2 gl-px-3 gl-text-black-normal! gl-text-decoration-none! gl-appearance-none gl-border-0 gl-bg-transparent gl-text-left gl-w-full gl-focus--focus"><span aria-hidden="true" class="gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-bg-transparent" style="width: 3px; border-radius: 3px; margin-right: 1px;"></span> <span class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><svg data-testid="users-icon" role="img" aria-hidden="true" class="super-sidebar-nav-item-icon gl-m-auto gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#users"></use></svg></span> <span class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Manage
+    </span> <span class="gl-text-right gl-text-gray-400"><svg data-testid="chevron-down-icon" role="img" aria-hidden="true" class="gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#chevron-down"></use></svg></span></button> <!----> <div id="manage" class="gl-list-style-none gl-p-0 gl-m-0 gl-transition-duration-medium gl-transition-timing-function-ease collapse" data-testid="menu-section" data-qa-section-name="Manage" style="display: none;"><ul aria-label="Manage" class="gl-list-style-none gl-p-0 gl-m-0"><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/activity" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base shortcuts-project-activity" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="activity" data-track-property="nav_panel_project" data-qa-submenu-item="Activity"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><!----></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Activity
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><!----></span></a> <button aria-label="Pin Activity" data-testid="nav-item-pin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack"></use></svg>  <!----></button></li><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/project_members" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="members" data-track-property="nav_panel_project" data-qa-submenu-item="Members"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><!----></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Members
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><!----></span></a> <button aria-label="Pin Members" data-testid="nav-item-pin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack"></use></svg>  <!----></button></li><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/labels" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="labels" data-track-property="nav_panel_project" data-qa-submenu-item="Labels"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><!----></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Labels
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><!----></span></a> <button aria-label="Pin Labels" data-testid="nav-item-pin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack"></use></svg>  <!----></button></li></ul></div></li><li><!----> <button id="menu-section-button-plan" data-testid="menu-section-button" data-qa-section-name="Plan" aria-controls="plan" aria-expanded="false" data-qa-menu-item="Plan" class="super-sidebar-nav-item gl-rounded-base gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-2 gl-py-2 gl-px-3 gl-text-black-normal! gl-text-decoration-none! gl-appearance-none gl-border-0 gl-bg-transparent gl-text-left gl-w-full gl-focus--focus"><span aria-hidden="true" class="gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-bg-transparent" style="width: 3px; border-radius: 3px; margin-right: 1px;"></span> <span class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><svg data-testid="planning-icon" role="img" aria-hidden="true" class="super-sidebar-nav-item-icon gl-m-auto gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#planning"></use></svg></span> <span class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Plan
+    </span> <span class="gl-text-right gl-text-gray-400"><svg data-testid="chevron-down-icon" role="img" aria-hidden="true" class="gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#chevron-down"></use></svg></span></button> <!----> <div id="plan" class="gl-list-style-none gl-p-0 gl-m-0 gl-transition-duration-medium gl-transition-timing-function-ease collapse" data-testid="menu-section" data-qa-section-name="Plan" style="display: none;"><ul aria-label="Plan" class="gl-list-style-none gl-p-0 gl-m-0"><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/issues" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base shortcuts-issues has-sub-items" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="project_issue_list" data-track-property="nav_panel_project" data-qa-submenu-item="Issues"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><!----></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Issues
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><span class="badge badge-neutral badge-pill gl-badge sm hide-on-focus-or-hover--target transition-opacity-on-hover--target"><!----> 
+        0
+      </span></span></a> <button aria-label="Unpin Issues" data-testid="nav-item-unpin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-solid-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack-solid"></use></svg>  <!----></button></li><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/boards" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base shortcuts-issue-boards" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="boards" data-track-property="nav_panel_project" data-qa-submenu-item="Issue boards"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><!----></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Issue boards
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><!----></span></a> <button aria-label="Pin Issue boards" data-testid="nav-item-pin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack"></use></svg>  <!----></button></li><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/milestones" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="milestones" data-track-property="nav_panel_project" data-qa-submenu-item="Milestones"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><!----></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Milestones
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><!----></span></a> <button aria-label="Pin Milestones" data-testid="nav-item-pin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack"></use></svg>  <!----></button></li><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/wikis/home" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base shortcuts-wiki" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="project_wiki" data-track-property="nav_panel_project" data-qa-submenu-item="Wiki"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><!----></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Wiki
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><!----></span></a> <button aria-label="Pin Wiki" data-testid="nav-item-pin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack"></use></svg>  <!----></button></li></ul></div></li><li><!----> <button id="menu-section-button-code" data-testid="menu-section-button" data-qa-section-name="Code" aria-controls="code" aria-expanded="false" data-qa-menu-item="Code" class="super-sidebar-nav-item gl-rounded-base gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-2 gl-py-2 gl-px-3 gl-text-black-normal! gl-text-decoration-none! gl-appearance-none gl-border-0 gl-bg-transparent gl-text-left gl-w-full gl-focus--focus"><span aria-hidden="true" class="gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-bg-transparent" style="width: 3px; border-radius: 3px; margin-right: 1px;"></span> <span class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><svg data-testid="code-icon" role="img" aria-hidden="true" class="super-sidebar-nav-item-icon gl-m-auto gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#code"></use></svg></span> <span class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Code
+    </span> <span class="gl-text-right gl-text-gray-400"><svg data-testid="chevron-down-icon" role="img" aria-hidden="true" class="gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#chevron-down"></use></svg></span></button> <!----> <div id="code" class="gl-list-style-none gl-p-0 gl-m-0 gl-transition-duration-medium gl-transition-timing-function-ease collapse" data-testid="menu-section" data-qa-section-name="Code" style="display: none;"><ul aria-label="Code" class="gl-list-style-none gl-p-0 gl-m-0"><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/snippets" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base shortcuts-snippets" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="project_snippets" data-track-property="nav_panel_project" data-qa-submenu-item="Snippets"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><!----></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Snippets
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><!----></span></a> <button aria-label="Pin Snippets" data-testid="nav-item-pin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack"></use></svg>  <!----></button></li></ul></div></li><li><!----> <button id="menu-section-button-deploy" data-testid="menu-section-button" data-qa-section-name="Deploy" aria-controls="deploy" aria-expanded="false" data-qa-menu-item="Deploy" class="super-sidebar-nav-item gl-rounded-base gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-2 gl-py-2 gl-px-3 gl-text-black-normal! gl-text-decoration-none! gl-appearance-none gl-border-0 gl-bg-transparent gl-text-left gl-w-full gl-focus--focus"><span aria-hidden="true" class="gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-bg-transparent" style="width: 3px; border-radius: 3px; margin-right: 1px;"></span> <span class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><svg data-testid="deployments-icon" role="img" aria-hidden="true" class="super-sidebar-nav-item-icon gl-m-auto gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#deployments"></use></svg></span> <span class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Deploy
+    </span> <span class="gl-text-right gl-text-gray-400"><svg data-testid="chevron-down-icon" role="img" aria-hidden="true" class="gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#chevron-down"></use></svg></span></button> <!----> <div id="deploy" class="gl-list-style-none gl-p-0 gl-m-0 gl-transition-duration-medium gl-transition-timing-function-ease collapse" data-testid="menu-section" data-qa-section-name="Deploy" style="display: none;"><ul aria-label="Deploy" class="gl-list-style-none gl-p-0 gl-m-0"><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/packages" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base shortcuts-container-registry" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="packages_registry" data-track-property="nav_panel_project" data-qa-submenu-item="Package Registry"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><!----></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Package Registry
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><!----></span></a> <button aria-label="Pin Package Registry" data-testid="nav-item-pin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack"></use></svg>  <!----></button></li></ul></div></li><li><!----> <button id="menu-section-button-operate" data-testid="menu-section-button" data-qa-section-name="Operate" aria-controls="operate" aria-expanded="false" data-qa-menu-item="Operate" class="super-sidebar-nav-item gl-rounded-base gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-2 gl-py-2 gl-px-3 gl-text-black-normal! gl-text-decoration-none! gl-appearance-none gl-border-0 gl-bg-transparent gl-text-left gl-w-full gl-focus--focus"><span aria-hidden="true" class="gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-bg-transparent" style="width: 3px; border-radius: 3px; margin-right: 1px;"></span> <span class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><svg data-testid="cloud-pod-icon" role="img" aria-hidden="true" class="super-sidebar-nav-item-icon gl-m-auto gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#cloud-pod"></use></svg></span> <span class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Operate
+    </span> <span class="gl-text-right gl-text-gray-400"><svg data-testid="chevron-down-icon" role="img" aria-hidden="true" class="gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#chevron-down"></use></svg></span></button> <!----> <div id="operate" class="gl-list-style-none gl-p-0 gl-m-0 gl-transition-duration-medium gl-transition-timing-function-ease collapse" data-testid="menu-section" data-qa-section-name="Operate" style="display: none;"><ul aria-label="Operate" class="gl-list-style-none gl-p-0 gl-m-0"><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/infrastructure_registry" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="infrastructure_registry" data-track-property="nav_panel_project" data-qa-submenu-item="Terraform modules"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><!----></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Terraform modules
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><!----></span></a> <button aria-label="Pin Terraform modules" data-testid="nav-item-pin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack"></use></svg>  <!----></button></li></ul></div></li><li><!----> <button id="menu-section-button-monitor" data-testid="menu-section-button" data-qa-section-name="Monitor" aria-controls="monitor" aria-expanded="false" data-qa-menu-item="Monitor" class="super-sidebar-nav-item gl-rounded-base gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-2 gl-py-2 gl-px-3 gl-text-black-normal! gl-text-decoration-none! gl-appearance-none gl-border-0 gl-bg-transparent gl-text-left gl-w-full gl-focus--focus"><span aria-hidden="true" class="gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-bg-transparent" style="width: 3px; border-radius: 3px; margin-right: 1px;"></span> <span class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><svg data-testid="monitor-icon" role="img" aria-hidden="true" class="super-sidebar-nav-item-icon gl-m-auto gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#monitor"></use></svg></span> <span class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Monitor
+    </span> <span class="gl-text-right gl-text-gray-400"><svg data-testid="chevron-down-icon" role="img" aria-hidden="true" class="gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#chevron-down"></use></svg></span></button> <!----> <div id="monitor" class="gl-list-style-none gl-p-0 gl-m-0 gl-transition-duration-medium gl-transition-timing-function-ease collapse" data-testid="menu-section" data-qa-section-name="Monitor" style="display: none;"><ul aria-label="Monitor" class="gl-list-style-none gl-p-0 gl-m-0"><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/incidents" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="incidents" data-track-property="nav_panel_project" data-qa-submenu-item="Incidents"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><!----></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Incidents
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><!----></span></a> <button aria-label="Pin Incidents" data-testid="nav-item-pin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack"></use></svg>  <!----></button></li><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/issues/service_desk" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="service_desk" data-track-property="nav_panel_project" data-qa-submenu-item="Service Desk"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><!----></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Service Desk
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><!----></span></a> <button aria-label="Pin Service Desk" data-testid="nav-item-pin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack"></use></svg>  <!----></button></li></ul></div></li><li><!----> <button id="menu-section-button-analyze" data-testid="menu-section-button" data-qa-section-name="Analyze" aria-controls="analyze" aria-expanded="false" data-qa-menu-item="Analyze" class="super-sidebar-nav-item gl-rounded-base gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-2 gl-py-2 gl-px-3 gl-text-black-normal! gl-text-decoration-none! gl-appearance-none gl-border-0 gl-bg-transparent gl-text-left gl-w-full gl-focus--focus"><span aria-hidden="true" class="gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-bg-transparent" style="width: 3px; border-radius: 3px; margin-right: 1px;"></span> <span class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><svg data-testid="chart-icon" role="img" aria-hidden="true" class="super-sidebar-nav-item-icon gl-m-auto gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#chart"></use></svg></span> <span class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Analyze
+    </span> <span class="gl-text-right gl-text-gray-400"><svg data-testid="chevron-down-icon" role="img" aria-hidden="true" class="gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#chevron-down"></use></svg></span></button> <!----> <div id="analyze" class="gl-list-style-none gl-p-0 gl-m-0 gl-transition-duration-medium gl-transition-timing-function-ease collapse" data-testid="menu-section" data-qa-section-name="Analyze" style="display: none;"><ul aria-label="Analyze" class="gl-list-style-none gl-p-0 gl-m-0"><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/value_stream_analytics" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base shortcuts-project-cycle-analytics" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="cycle_analytics" data-track-property="nav_panel_project" data-qa-submenu-item="Value stream analytics"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><!----></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Value stream analytics
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><!----></span></a> <button aria-label="Pin Value stream analytics" data-testid="nav-item-pin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack"></use></svg>  <!----></button></li><li data-testid="nav-item" class="gl-relative show-on-focus-or-hover--context hide-on-focus-or-hover--context transition-opacity-on-hover--context"><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/ml/experiments" class="super-sidebar-nav-item gl-relative gl-display-flex gl-align-items-center gl-min-h-7 gl-gap-3 gl-mb-1 gl-py-2 gl-text-black-normal! gl-text-decoration-none! gl-focus--focus show-on-focus-or-hover--control hide-on-focus-or-hover--control gl-px-3 gl-rounded-base" data-testid="nav-item-link" data-track-action="click_menu_item" data-track-label="model_experiments" data-track-property="nav_panel_project" data-qa-submenu-item="Model experiments"><div aria-hidden="true" data-testid="active-indicator" class="active-indicator gl-absolute gl-left-2 gl-top-2 gl-bottom-2 gl-transition-slow gl-opacity-0" style="width: 3px; border-radius: 3px; margin-right: 1px;"></div> <div class="gl-flex-shrink-0 gl-w-6 gl-display-flex"><!----></div> <div class="gl-flex-grow-1 gl-text-gray-900 gl-truncate-end">
+      Model experiments
+      <!----></div>  <span class="gl-display-flex gl-align-items-start gl-justify-content-end gl-min-w-6"><!----></span></a> <button aria-label="Pin Model experiments" data-testid="nav-item-pin" type="button" class="btn show-on-focus-or-hover--target transition-opacity-on-hover--target always-animate gl-absolute gl-right-3 gl-top-2 btn-default btn-sm gl-button btn-default-tertiary btn-icon gl-pointer-events-none"><!----> <svg data-testid="thumbtack-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#thumbtack"></use></svg>  <!----></button></li></ul></div></li></ul></div> <div id="sidebar-portal-mount"></div> <div></div> <div class="bottom-scrim-wrapper"><div class="bottom-scrim"></div></div></div> <div class="gl-p-2"><div class="gl-disclosure-dropdown gl-new-dropdown"><div id="dropdown-toggle-btn-18" data-testid="base-dropdown-toggle" class="gl-new-dropdown-custom-toggle"><button type="button" class="btn super-sidebar-help-center-toggle btn-with-notification btn-default btn-md gl-button btn-default-tertiary"><!----> <svg data-testid="question-o-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#question-o"></use></svg>  <span class="gl-button-text"><span data-testid="notification-dot" class="notification-dot-info"></span>
+      Help
+    </span></button></div> <div id="base-dropdown-20" data-testid="base-dropdown-menu" class="gl-new-dropdown-panel gl-w-31!"><div class="gl-new-dropdown-inner">  <ul id="disclosure-19" aria-labelledby="dropdown-toggle-btn-18" data-testid="disclosure-content" tabindex="-1" class="gl-new-dropdown-contents"> <!----> <li><!----> <ul class="gl-mb-0 gl-pl-0 gl-list-style-none"><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://gitlab.hsrw.eu/help" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="help" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><span class="gl-display-flex gl-justify-content-space-between gl-align-items-center">
+        Help
+        <!----></span></span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://about.gitlab.com/get-help/" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="support" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><span class="gl-display-flex gl-justify-content-space-between gl-align-items-center">
+        Support
+        <!----></span></span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://docs.gitlab.com/" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="gitlab_documentation" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><span class="gl-display-flex gl-justify-content-space-between gl-align-items-center">
+        GitLab documentation
+        <!----></span></span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://about.gitlab.com/pricing" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="compare_gitlab_plans" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><span class="gl-display-flex gl-justify-content-space-between gl-align-items-center">
+        Compare GitLab plans
+        <!----></span></span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://forum.gitlab.com/" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="community_forum" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><span class="gl-display-flex gl-justify-content-space-between gl-align-items-center">
+        Community forum
+        <!----></span></span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://gitlab.hsrw.eu/help#contributing-to-gitlab" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="contribute_to_gitlab" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><span class="gl-display-flex gl-justify-content-space-between gl-align-items-center">
+        Contribute to GitLab
+        <!----></span></span></a></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><a tabindex="-1" href="https://about.gitlab.com/submit-feedback" data-track-property="nav_help_menu" data-track-action="click_link" data-track-label="submit_feedback" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><span class="gl-display-flex gl-justify-content-space-between gl-align-items-center">
+        Provide feedback
+        <!----></span></span></a></li></ul></li> <li class="gl-border-t gl-border-t-gray-200 gl-pt-2 gl-mt-2"><!----> <ul class="gl-mb-0 gl-pl-0 gl-list-style-none"><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><button tabindex="-1" data-track-action="click_button" data-track-label="keyboard_shortcuts_help" data-track-property="nav_help_menu" type="button" class="gl-new-dropdown-item-content js-shortcuts-modal-trigger"><span class="gl-new-dropdown-item-text-wrapper"><span class="gl-display-flex gl-justify-content-space-between gl-align-items-center gl-my-n1">
+        Keyboard shortcuts
+        <kbd class="flat">?</kbd></span></span></button></li><li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item"><button tabindex="-1" data-track-action="click_button" data-track-label="whats_new" data-track-property="nav_help_menu" type="button" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper"><span class="gl-display-flex gl-justify-content-space-between gl-align-items-center gl-my-n1">
+        What's new
+        <span class="badge badge-info badge-pill gl-badge sm"><!----> 6</span></span></span></button></li></ul></li></ul> </div></div></div> <!----> <div></div></div></div></nav> <a href="https://gitlab.hsrw.eu/dashboard/milestones" class="gl-display-none dashboard-shortcuts-milestones">
+    Milestones
+  </a><a href="https://gitlab.hsrw.eu/dashboard/snippets" class="gl-display-none dashboard-shortcuts-snippets">
+    Snippets
+  </a><a href="https://gitlab.hsrw.eu/dashboard/activity" class="gl-display-none dashboard-shortcuts-activity">
+    Activity
+  </a><a href="https://gitlab.hsrw.eu/dashboard/groups" class="gl-display-none dashboard-shortcuts-groups">
+    Groups
+  </a><a href="https://gitlab.hsrw.eu/dashboard/projects" class="gl-display-none dashboard-shortcuts-projects">
+    Projects
+  </a><a href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/issues/new" class="gl-display-none shortcuts-new-issue">
+    Create a new issue
+  </a> <!----> <!----></div>
+
+<div class="content-wrapper">
+<div class="mobile-overlay"></div>
+
+<div class="alert-wrapper gl-force-block-formatting-context">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="top-bar-fixed container-fluid" data-testid="top-bar">
+<div class="top-bar-container gl-display-flex gl-align-items-center gl-gap-2">
+<button aria-controls="super-sidebar" aria-expanded="false" aria-label="Primary navigation sidebar" type="button" class="btn btn-default btn-md gl-button btn-default-tertiary btn-icon gl-button btn btn-icon btn-md btn-default btn-default-tertiary js-super-sidebar-toggle-expand super-sidebar-toggle gl-ml-n3"><!----> <svg data-testid="sidebar-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#sidebar"></use></svg>  <!----></button>
+<nav aria-label="Breadcrumbs" class="breadcrumbs gl-breadcrumbs" data-testid="breadcrumb-links">
+<ul class="breadcrumb gl-breadcrumb-list js-breadcrumbs-list">
+<li class="gl-breadcrumb-item gl-display-inline-flex"><a class="group-path js-breadcrumb-item-text " href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung">LV Fortgeschrittene Programmierung</a></li><li class="expander gl-breadcrumb-item gl-display-inline-flex">
+<button aria-label="Show all breadcrumbs" class="text-expander has-tooltip js-breadcrumbs-collapsed-expander gl-ml-0" data-container="body" title="Show all breadcrumbs" type="button">
+<svg class="s12" data-testid="ellipsis_h-icon"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#ellipsis_h"></use></svg>
+</button>
+</li>
+<li class="gl-breadcrumb-item gl-display-none!">
+<a class="group-path js-breadcrumb-item-text " href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen">Übungen</a>
+</li>
+<li class="gl-breadcrumb-item gl-display-inline-flex"><a class="group-path js-breadcrumb-item-text " href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2">Übungen V2</a></li> <li class="gl-breadcrumb-item gl-display-inline-flex"><a class="gl-display-inline-flex!" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3"><span class="js-breadcrumb-item-text">Übung 3</span></a></li>
+
+</ul>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"LV Fortgeschrittene Programmierung","item":"https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung"},{"@type":"ListItem","position":2,"name":"Übungen","item":"https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen"},{"@type":"ListItem","position":3,"name":"Übungen V2","item":"https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2"},{"@type":"ListItem","position":4,"name":"Übung 3","item":"https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3"}]}
+
+</script>
+</nav>
+
+
+
+</div>
+</div>
+
+</div>
+<div class="container-fluid container-limited project-highlight-puc">
+<main class="content" id="content-body" itemscope="" itemtype="http://schema.org/SoftwareSourceCode">
+<div class="flash-container flash-container-page sticky" data-testid="flash-container">
+<!---->
+</div>
+
+
+
+
+
+
+
+
+<header class="project-home-panel js-show-on-project-root gl-mt-5 empty-project">
+<div class="gl-display-flex gl-justify-content-space-between gl-flex-wrap gl-flex-direction-column gl-md-flex-direction-row gl-gap-5">
+<div class="home-panel-title-row gl-display-flex gl-align-items-center">
+<div alt="Übung 3" class="gl-avatar gl-avatar-s48 gl-align-self-start gl-flex-shrink-0 gl-mr-3 gl-rounded-base! gl-avatar-identicon gl-avatar-identicon-bg2" itemprop="image">
+Ü
+</div>
+
+<h1 class="home-panel-title gl-heading-1 gl-mt-3 gl-display-flex gl-align-items-center gl-flex-wrap gl-gap-3 gl-word-break-word gl-mb-0!" data-testid="project-name-content" itemprop="name">
+Übung 3
+<span class="has-tooltip visibility-icon gl-display-inline-flex gl-text-secondary" data-container="body" data-placement="top" title="Internal - The project can be accessed by any logged in user except external users."><svg class="s16 icon" data-testid="shield-icon"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#shield"></use></svg></span>
+
+
+</h1>
+</div>
+<div class="project-repo-buttons gl-display-flex gl-justify-content-md-end gl-align-items-center gl-flex-wrap gl-gap-3">
+<div><div class="dropdown b-dropdown gl-dropdown btn-group" data-testid="notification-dropdown" id="__BVID__224"><!----><button aria-haspopup="menu" aria-expanded="false" type="button" class="btn dropdown-toggle btn-default btn-md gl-button gl-dropdown-toggle dropdown-icon-only" id="__BVID__224__BV_toggle_"><!----> <svg data-testid="notifications-icon" role="img" aria-hidden="true" class="dropdown-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#notifications"></use></svg> <span class="gl-dropdown-button-text"></span> <svg data-testid="chevron-down-icon" role="img" aria-hidden="true" class="gl-button-icon dropdown-chevron gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#chevron-down"></use></svg></button><ul role="menu" tabindex="-1" class="dropdown-menu" aria-labelledby="__BVID__224__BV_toggle_"><div class="gl-dropdown-inner"><!----> <!----> <div class="gl-dropdown-contents"><!----> <li role="presentation" class="gl-dropdown-item is-active"><button role="menuitem" type="button" class="dropdown-item"><svg data-testid="dropdown-item-checkbox" role="img" aria-hidden="true" class="gl-icon s16 gl-dropdown-item-check-icon gl-mt-3 gl-align-self-start"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#mobile-issue-close"></use></svg> <!----> <!----> <div class="gl-dropdown-item-text-wrapper"><p class="gl-dropdown-item-text-primary"><div class="gl-display-flex gl-flex-direction-column"><span class="gl-font-weight-bold">Global</span> <span class="gl-text-gray-500">Use your global notification setting</span></div></p> <!----></div> <!----></button></li><li role="presentation" class="gl-dropdown-item"><button role="menuitem" type="button" class="dropdown-item"><svg data-testid="dropdown-item-checkbox" role="img" aria-hidden="true" class="gl-icon s16 gl-dropdown-item-check-icon gl-visibility-hidden gl-mt-3 gl-align-self-start"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#mobile-issue-close"></use></svg> <!----> <!----> <div class="gl-dropdown-item-text-wrapper"><p class="gl-dropdown-item-text-primary"><div class="gl-display-flex gl-flex-direction-column"><span class="gl-font-weight-bold">Watch</span> <span class="gl-text-gray-500">You will receive notifications for any activity</span></div></p> <!----></div> <!----></button></li><li role="presentation" class="gl-dropdown-item"><button role="menuitem" type="button" class="dropdown-item"><svg data-testid="dropdown-item-checkbox" role="img" aria-hidden="true" class="gl-icon s16 gl-dropdown-item-check-icon gl-visibility-hidden gl-mt-3 gl-align-self-start"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#mobile-issue-close"></use></svg> <!----> <!----> <div class="gl-dropdown-item-text-wrapper"><p class="gl-dropdown-item-text-primary"><div class="gl-display-flex gl-flex-direction-column"><span class="gl-font-weight-bold">Participate</span> <span class="gl-text-gray-500">You will only receive notifications for threads you have participated in</span></div></p> <!----></div> <!----></button></li><li role="presentation" class="gl-dropdown-item"><button role="menuitem" type="button" class="dropdown-item"><svg data-testid="dropdown-item-checkbox" role="img" aria-hidden="true" class="gl-icon s16 gl-dropdown-item-check-icon gl-visibility-hidden gl-mt-3 gl-align-self-start"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#mobile-issue-close"></use></svg> <!----> <!----> <div class="gl-dropdown-item-text-wrapper"><p class="gl-dropdown-item-text-primary"><div class="gl-display-flex gl-flex-direction-column"><span class="gl-font-weight-bold">On mention</span> <span class="gl-text-gray-500">You will receive notifications only for comments in which you were @mentioned</span></div></p> <!----></div> <!----></button></li><li role="presentation" class="gl-dropdown-item"><button role="menuitem" type="button" class="dropdown-item"><svg data-testid="dropdown-item-checkbox" role="img" aria-hidden="true" class="gl-icon s16 gl-dropdown-item-check-icon gl-visibility-hidden gl-mt-3 gl-align-self-start"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#mobile-issue-close"></use></svg> <!----> <!----> <div class="gl-dropdown-item-text-wrapper"><p class="gl-dropdown-item-text-primary"><div class="gl-display-flex gl-flex-direction-column"><span class="gl-font-weight-bold">Disabled</span> <span class="gl-text-gray-500">You will not get any notifications via email</span></div></p> <!----></div> <!----></button></li> <li role="presentation" class="gl-dropdown-divider"><hr role="separator" aria-orientation="horizontal" class="dropdown-divider"></li> <li role="presentation" class="gl-dropdown-item"><button role="menuitem" type="button" class="dropdown-item"><svg data-testid="dropdown-item-checkbox" role="img" aria-hidden="true" class="gl-icon s16 gl-dropdown-item-check-icon gl-visibility-hidden gl-mt-3 gl-align-self-start"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#mobile-issue-close"></use></svg> <!----> <!----> <div class="gl-dropdown-item-text-wrapper"><p class="gl-dropdown-item-text-primary"><div class="gl-display-flex gl-flex-direction-column"><span class="gl-font-weight-bold">Custom</span> <span class="gl-text-gray-500">You will only receive notifications for the events you choose</span></div></p> <!----></div> <!----></button></li></div> <!----></div></ul></div> <!----></div>
+<div role="group" class="btn-group"><button data-testid="star-button" title="Star" type="button" class="btn star-btn btn-default btn-md gl-button"><!----> <!---->  <span class="gl-button-text"><svg data-testid="star-o-icon" role="img" aria-hidden="true" class="gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#star-o"></use></svg>
+    Star
+  </span></button> <a data-testid="star-count" title="Starrers" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3/-/starrers" class="btn star-count btn-default btn-md gl-button"><!----> <!---->  <span class="gl-button-text">
+    0
+  </span></a></div>
+
+
+<span class="gl-sr-only" data-testid="project-id-content" itemprop="identifier">
+Project ID: 2353
+</span>
+<div class="gl-disclosure-dropdown gl-relative gl-w-full gl-sm-w-auto gl-new-dropdown" data-testid="groups-projects-more-actions-dropdown"><div id="dropdown-toggle-btn-34" data-testid="base-dropdown-toggle" class="gl-new-dropdown-custom-toggle"><div class="gl-min-h-7"><button aria-label="Actions" title="Actions" type="button" class="btn gl-md-display-none! gl-new-dropdown-toggle gl-absolute gl-top-0 gl-left-0 gl-w-full gl-sm-w-auto btn-default btn-md gl-button btn-default-secondary"><!----> <!---->  <span class="gl-button-text gl-w-full"><span class="gl-new-dropdown-button-text">Actions</span> <svg data-testid="chevron-down-icon" role="img" aria-hidden="true" class="dropdown-chevron gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#chevron-down"></use></svg></span></button> <button aria-label="Actions" title="Actions" type="button" class="btn gl-display-none gl-md-display-flex! gl-new-dropdown-toggle gl-new-dropdown-icon-only gl-new-dropdown-toggle-no-caret btn-default btn-md gl-button btn-default-tertiary btn-icon"><!----> <svg data-testid="ellipsis_v-icon" role="img" aria-hidden="true" class="gl-button-icon gl-icon s16"><use href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#ellipsis_v"></use></svg>  <!----></button></div></div> <div id="base-dropdown-36" data-testid="base-dropdown-menu" class="gl-new-dropdown-panel gl-w-31!"><div class="gl-new-dropdown-inner">  <ul id="disclosure-35" aria-labelledby="dropdown-toggle-btn-34" data-testid="disclosure-content" tabindex="-1" class="gl-new-dropdown-contents"> <li tabindex="0" data-testid="disclosure-dropdown-item" class="gl-new-dropdown-item" data-clipboard-text="2353"><button tabindex="-1" data-testid="copy-project-id" type="button" class="gl-new-dropdown-item-content"><span class="gl-new-dropdown-item-text-wrapper">
+          Copy project ID: 2353
+        </span></button></li> <!----></ul> </div></div></div>
+
+</div>
+</div>
+<div class="gl-my-3">
+
+</div>
+<div class="home-panel-home-desc mt-1">
+</div>
+
+</header>
+
+
+
+
+<div class="project-show-wiki">
+<div class="container-fluid container-limited">
+<div class="md gl-mt-3 gl-mb-3">
+<p data-sourcepos="1:1-1:164" dir="auto"><a data-sourcepos="1:1-1:164" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/lv-fortgeschrittene-programmierung/-/wikis/%C3%9Cbungen"><gl-emoji title="black left-pointing triangle" data-name="arrow_backward" data-unicode-version="1.1">◀</gl-emoji> Zurück zur Aufgabenübersicht</a></p>
+<h1 data-sourcepos="3:1-3:30" dir="auto">
+<a id="user-content-übungsaufgaben-javascript-1" class="anchor" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3#%C3%BCbungsaufgaben-javascript-1" aria-hidden="true"></a>Übungsaufgaben JavaScript 1</h1>
+<h2 data-sourcepos="5:1-5:13" dir="auto">
+<a id="user-content-aufgabe-1" class="anchor" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3#aufgabe-1" aria-hidden="true"></a>Aufgabe 1</h2>
+<p data-sourcepos="6:1-6:6" dir="auto">Basics</p>
+<p data-sourcepos="8:1-8:131" dir="auto">a) Truthy and Falsy (siehe z.B. <a data-sourcepos="8:33-8:130" href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy?retiredLocale=de" rel="nofollow noreferrer noopener" target="_blank">developer.mozilla.org</a>)</p>
+<p data-sourcepos="10:1-11:239" dir="auto">Schreiben Sie ein kurzes Programm, das zunächst eine Variable <code data-sourcepos="10:65-10:69">let x</code> definiert ohne diese zu initialisieren.
+Verwenden Sie innerhalb einer if-Abfrage nur diese Variable (<code data-sourcepos="11:63-11:67">if(x)</code>), um den Satz „x hat einen der folgenden Werte: false, 0, -0, "", null, undefined oder NaN.“ nur dann in der Konsole auszugeben, wenn die Aussage auch zutreffend ist.</p>
+<p data-sourcepos="13:1-13:51" dir="auto">b) JavaScript ist eine dynamisch typisierte Sprache</p>
+<p data-sourcepos="15:1-16:47" dir="auto">Geben Sie mit JavaScript eine Initialisierung für die Variablen <code data-sourcepos="15:67-15:67">x</code> und <code data-sourcepos="15:75-15:75">y</code> an, so
+dass danach gilt <code data-sourcepos="16:19-16:46">(x != y) &amp;&amp; (x + 1 == y + 1)</code></p>
+<p data-sourcepos="19:1-19:154" dir="auto">c)[Für Fortgeschrittene] Häufig trifft man auf die sogenannte Pfeilfunktion-Notation in JavaScript. Aber wofür sollte man diese lieber nicht verwenden?</p>
+<p data-sourcepos="21:1-21:135" dir="auto">Recherchieren Sie z.B. auf <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions?retiredLocale=de" rel="nofollow noreferrer noopener" target="_blank">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions?retiredLocale=de</a></p>
+<p data-sourcepos="23:1-23:39" dir="auto">Beispiel Pfeilfunktion-Notation (<code data-sourcepos="23:35-23:36">=&gt;</code>):</p>
+<div class="gl-relative markdown-code-block js-markdown-code">
+<pre data-sourcepos="25:3-29:3" class="code highlight js-syntax-highlight language-plaintext" lang="plaintext" v-pre="true" id="code-39"><code><span id="LC1" class="line" lang="plaintext">let arrowFunction =(x)=&gt;{</span>
+<span id="LC2" class="line" lang="plaintext">      return x+1;</span>
+<span id="LC3" class="line" lang="plaintext">    }</span></code></pre>
+<copy-code><button type="button" class="btn btn-default btn-md gl-button btn-icon has-tooltip" data-title="Copy to clipboard" data-clipboard-target="pre#code-39"><svg><use xlink:href="/assets/icons-6f8fc8caf4d3bb7dcb398720822d1175c6f60649adbb5be073b36a5d0b04e465.svg#copy-to-clipboard"></use></svg></button></copy-code>
+</div>
+<h2 data-sourcepos="32:1-32:12" dir="auto">
+<a id="user-content-aufgabe-2" class="anchor" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3#aufgabe-2" aria-hidden="true"></a>Aufgabe 2</h2>
+<p data-sourcepos="33:1-33:36" dir="auto">Eventhandler für Benutzerereignisse</p>
+<p data-sourcepos="35:1-36:101" dir="auto">a) Informieren Sie sich in den bekannten Quellen über HTML-Ereignisattribute, die
+für HTML-Elemente angegeben werden können (z. B. <code data-sourcepos="36:53-36:97">onclick, onmouseover, onmouseout, onload, ...</code>):</p>
+<ul data-sourcepos="38:1-40:0" dir="auto">
+<li data-sourcepos="38:1-38:80"><a data-sourcepos="38:3-38:80" href="https://www.w3schools.com/jsref/dom_obj_event.asp" rel="nofollow noreferrer noopener" target="_blank">W3Schools HTML DOM Events</a></li>
+<li data-sourcepos="39:1-40:0"><a data-sourcepos="39:3-39:76" href="https://wiki.selfhtml.org/wiki/HTML/Eventhandler" rel="nofollow noreferrer noopener" target="_blank">SelftHTML Eventhandler</a></li>
+</ul>
+<p data-sourcepos="41:1-41:360" dir="auto">Erstellen Sie ein HTML-Dokument mit verschiedenen Elementen. Verknüpfen sie die Elemente mit Ereignissen (je Element ein Ereignis) und schreiben Sie entsprechende Javascript-Funktionen (sog. Eventhandler), die bei Eintritt des Ereignisses aufgerufen werden. Ändern Sie in den JavaScript-Funktionen jeweils den Inhalt des Elements und dessen Hintergrundfarbe.</p>
+<p data-sourcepos="43:1-43:235" dir="auto">Hinweis: Sie sollten den HTML-Elementen IDs geben, über diese IDs die Elemente im !JavaScript ansprechen (<code data-sourcepos="43:109-43:133">document.getElementById()</code>) und dann deren Attribute ändern (<code data-sourcepos="43:172-43:187">innerHTML, style</code>). Fragen Sie auch die Suchmaschine Ihrer Wahl.</p>
+<p data-sourcepos="45:1-45:72" dir="auto">Schreiben Sie Eventhandler für mindestens acht verschiedene Ereignisse.</p>
+<p data-sourcepos="47:1-49:14" dir="auto">b) Probieren Sie aus, was passiert, wenn mehrere verschiedene, konkurrierende
+Eventhandler an ein und dasselbe HTML-Element geknüpft werden (z. B. <code data-sourcepos="48:72-49:11">onclick, onmouseover</code>).</p>
+<h2 data-sourcepos="51:1-51:12" dir="auto">
+<a id="user-content-aufgabe-3" class="anchor" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3#aufgabe-3" aria-hidden="true"></a>Aufgabe 3</h2>
+<p data-sourcepos="52:1-52:26" dir="auto">Validierung von Formularen</p>
+<p data-sourcepos="54:1-55:144" dir="auto">Informieren Sie sich über HTML-Formulare und die verschiedenen Typen des
+<code data-sourcepos="55:2-55:6">input</code>-Elements: <a data-sourcepos="55:19-55:72" href="https://wiki.selfhtml.org/wiki/Input" rel="nofollow noreferrer noopener" target="_blank">SelfHTML Input</a>. Erstellen Sie ein HTML-Formular, das persönliche Daten entgegennimmt:</p>
+<ul data-sourcepos="57:1-62:0" dir="auto">
+<li data-sourcepos="57:1-57:15">Name, Vorname</li>
+<li data-sourcepos="58:1-58:14">Geburtsdatum</li>
+<li data-sourcepos="59:1-59:9">Adresse</li>
+<li data-sourcepos="60:1-60:13">Mailadresse</li>
+<li data-sourcepos="61:1-62:0">Telefonnummer</li>
+</ul>
+<p data-sourcepos="63:1-63:208" dir="auto">Verwenden Sie jeweils die spezialisierten Typen des <code data-sourcepos="63:54-63:58">input</code>-Elements. Formatieren Sie das Formular mit Bootstrap so, dass es gefällig aussieht, also in einem geschäftlichen Kontext verwendet werden könnte.</p>
+<p data-sourcepos="65:1-65:148" dir="auto">Erstellen Sie eine (oder mehrere) JavaScript-Funktionen, die beim Absenden des Formulars (Klick auf einen submit-Button), folgende Daten validieren:</p>
+<ul data-sourcepos="67:1-69:0" dir="auto">
+<li data-sourcepos="67:1-67:91">Entsprechend des Geburtsdatums muss das Alter der Person bei mindestens 18 Jahren liegen.</li>
+<li data-sourcepos="68:1-69:0">Die Mailadresse muss der Form <code data-sourcepos="68:34-68:47">xxxx@xxxx.xxxx</code> folgen, wobei <code data-sourcepos="68:65-68:68">xxxx</code> beliebiger, exakt vierstelliger, Text sein darf.</li>
+</ul>
+<p data-sourcepos="70:1-70:186" dir="auto">Informieren Sie sich über die dafür geeigneten Funktionen der JavaScript-API ebenfalls online. Den Inhalt eines <code data-sourcepos="70:116-70:120">input</code>-Elements kann man oft über dessen Eigenschaft <code data-sourcepos="70:171-70:175">value</code> auslesen.</p>
+<p data-sourcepos="72:1-72:363" dir="auto">Falls Daten nicht den Vorgaben entsprechen, sollen die jeweils betroffenen <code data-sourcepos="72:77-72:81">input</code>-Elemente einen roten Rahmen erhalten und beim Überfahren mit der Maus soll ein Hinweistext angezeigt werden, wie das erwartete Format der Eingabe lautet. Falls die Daten korrekt eingegeben wurden, soll in der HTML-Seite unter dem Formular eine Erfolgsmeldung eingeblendet werden.</p>
+<p data-sourcepos="74:1-74:94" dir="auto">Hinweis: Überlegen Sie, wie das sehr einfach mit einer CSS-Eigenschaft gesteuert werden kann.</p>
+<p data-sourcepos="76:1-76:53" dir="auto"><strong data-sourcepos="76:1-76:17">Zusatzaufgabe</strong> Adressvalidierung mit Onlinedienst:</p>
+<p data-sourcepos="78:1-78:184" dir="auto">Finden Sie heraus, wie mit einem Onlinedienst überprüft werden kann, ob die eingegebene Adresse tatsächlich existiert und nehmen Sie diese Prüfung in Ihre Datenvalidierung mit auf.</p>
+<h2 data-sourcepos="80:1-80:12" dir="auto">
+<a id="user-content-aufgabe-4" class="anchor" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3#aufgabe-4" aria-hidden="true"></a>Aufgabe 4</h2>
+<p data-sourcepos="81:1-81:36" dir="auto">Eigenschaften eines Events auswerten</p>
+<p data-sourcepos="83:1-83:465" dir="auto">Bislang haben Sie nur Elementwerte ausgelesen und geändert. In vielen Kontexten ist es jedoch erforderlich, Informationen über das eingetretene Ereignis selbst zu erlangen (z. B. Mausposition, gedrückte Taste, ...). Dies erfolgt, indem die Eventhandlerfunktion um einen Parameter <code data-sourcepos="83:285-83:289">event</code> erweitert wird, der von der Laufzeitumgebung beim Eintritt des Ereignisses gesetzt wird. Auf die Eigenschaften dieses Parameters kann dann im Eventhandler zugegriffen werden.</p>
+<p data-sourcepos="85:1-85:32" dir="auto">Informieren Sie sich z. B. hier:</p>
+<ul data-sourcepos="87:1-89:0" dir="auto">
+<li data-sourcepos="87:1-87:79"><a data-sourcepos="87:3-87:79" href="https://www.w3schools.com/jsref/event_pagex.asp" rel="nofollow noreferrer noopener" target="_blank">W3Schools MouseEvent pageX</a></li>
+<li data-sourcepos="88:1-89:0"><a data-sourcepos="88:3-88:90" href="https://www.w3schools.com/jsref/tryit.asp?tryjsref_event_mouse_pagexy" rel="nofollow noreferrer noopener" target="_blank">W3Schools TryIt</a></li>
+</ul>
+<p data-sourcepos="90:1-90:128" dir="auto">Erstellen Sie eine HTML-Datei mit zwei ineinander geschachtelten <code data-sourcepos="90:67-90:69">div</code>-Elementen der Größen 600 x 400 Pixel und 30 x 30 Pixel.</p>
+<p data-sourcepos="92:1-93:306" dir="auto">a) Sobald in das äußere Element geklickt wird, soll sich das innere Element (dessen Mittelpunkt) an die Position des Mausklicks bewegen (nicht springen).
+Falls der Mausklick so nah am Rand des äußeren Elements stattfindet, dass das innere beim Bewegen über den Rand gelangen würde, soll es nur bis zum Rand bewegt werden (es bleibt immer vollständig innerhalb des Spielfeldes). Recherchieren Sie die notwendigen Funktionen der JavaScript-API selbständig.</p>
+<p data-sourcepos="95:1-95:206" dir="auto">Verwenden Sie für die Bewegung CSS-Transitionen. Sie müssen also den Mausklick abfangen und dann die neue Position berechnen und die entsprechenden <code data-sourcepos="95:152-95:156">style</code>-Attribute des Elements per !JavaScript anpassen.</p>
+<p data-sourcepos="97:1-97:297" dir="auto">b) Ändern Sie Ihre Lösung zu a) (oder eine Kopie davon) so ab, dass Sie das innere Element frei mit den Cursortasten steuern können. Es soll sich ebenfalls nicht über den Rand des Spielfeldes bewegen können. Informieren Sie sich selbständig über die passenden Events und deren Verarbeitung.</p>
+<h2 data-sourcepos="99:1-99:12" dir="auto">
+<a id="user-content-aufgabe-5" class="anchor" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3#aufgabe-5" aria-hidden="true"></a>Aufgabe 5</h2>
+<p data-sourcepos="100:1-100:35" dir="auto">Analoge Uhr mit CSS und !JavaScript</p>
+<p data-sourcepos="102:1-104:5" dir="auto">a) Mit CSS lassen sich Elemente praktisch beliebig anordnen und orientieren. Erstellen
+Sie eine HTML-Datei, in der aus <code data-sourcepos="103:34-103:36">div</code>-Elementen eine analoge Uhr zusammengesetzt
+wird.</p>
+<p data-sourcepos="106:1-106:73" dir="auto">Beispiel (das Bild stammt aus der Musterlösung, jede Linie ist ein div):</p>
+<p data-sourcepos="108:1-108:58" dir="auto"><a class="no-attachment-icon" href="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/uhr1.png" target="_blank" rel="noopener noreferrer" data-canonical-src="uploads/ea2273ba23b0c7b2a0a50b0993f44202/uhr1.png"><img data-sourcepos="108:1-108:58" alt="uhr1" decoding="async" class="js-lazy-loaded" data-canonical-src="uploads/ea2273ba23b0c7b2a0a50b0993f44202/uhr1.png" loading="lazy" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/uhr1.png" data-testid="js-lazy-loaded-content"></a></p>
+<p data-sourcepos="110:1-110:238" dir="auto">HTML-Elemente können mit <a data-sourcepos="110:27-110:119" href="https://www.w3schools.com/jsref/met_document_createelement.asp" rel="nofollow noreferrer noopener" target="_blank">document.createElement(...)</a> erzeugt und mit <a data-sourcepos="110:137-110:220" href="https://www.w3schools.com/jsref/met_node_appendchild.asp" rel="nofollow noreferrer noopener" target="_blank">element.appendChild(...)</a> angezeigt werden.</p>
+<p data-sourcepos="112:1-112:267" dir="auto">Verwenden Sie die Eigenschaften <code data-sourcepos="112:34-112:41">position</code>, <code data-sourcepos="112:46-112:54">transform</code> und <code data-sourcepos="112:62-112:77">transform-origin</code> für die Anordnung. Überlegen Sie, wie die Winkel der Minutenstriche berechnet werden können und welche Winkel Sie den Zeigern geben müssen, damit eine bestimmte Uhrzeit angezeigt wird.</p>
+<p data-sourcepos="114:1-114:125" dir="auto">Verwenden Sie ausschließlich HTML-Elemente zur Darstellung der Uhr (z. B. positionierte <code data-sourcepos="114:91-114:93">div</code>s), nicht das <code data-sourcepos="114:110-114:115">canvas</code>-Element.</p>
+<p data-sourcepos="116:1-117:301" dir="auto">b) Erweitern Sie Ihre Lösung so, dass die Zeiger sich tatsächlich bewegen. Hinweis: Verwenden Sie die
+JavaScript-API-Funktion <a data-sourcepos="117:25-117:96" href="https://www.w3schools.com/jsref/met_win_setinterval.asp" rel="nofollow noreferrer noopener" target="_blank">setInterval()</a>, um jede Sekunde eine Funktion aufzurufen, mit der die Zeigerposition neu gesetzt wird. Sie müssen im Wesentlichen nur die Winkel der Zeiger neu berechnen und die entsprechenden CSS-Eigenschaften setzen.</p>
+<p data-sourcepos="119:1-119:123" dir="auto"><a data-sourcepos="119:1-119:123" href="https://www.youtube.com/watch?v=Y-6OBAVbzfI" title="Uebung Uhr 1" rel="nofollow noreferrer noopener" target="_blank"><img data-sourcepos="119:2-119:62" alt="Uebung Uhr 1" decoding="async" class="js-lazy-loaded" loading="lazy" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/0.jpg" data-testid="js-lazy-loaded-content"></a></p>
+<p data-sourcepos="121:1-121:242" dir="auto">c) [Schwer] Modifizieren Sie das Aussehen der Uhr wie unten gezeigt, fügen Sie eine Datumsangabe hinzu und lassen Sie den Sekundenzeiger jede Sekunde eine Transition ausführen, so dass er auf dem jeweiligen Minuten-Teilstrich kurz verharrt:</p>
+<p data-sourcepos="123:1-123:123" dir="auto"><a data-sourcepos="123:1-123:123" href="https://www.youtube.com/watch?v=hcVZjOdQrls" title="Uebung Uhr 2" rel="nofollow noreferrer noopener" target="_blank"><img data-sourcepos="123:2-123:62" alt="Uebung Uhr 2" decoding="async" class="js-lazy-loaded" loading="lazy" src="./LV Fortgeschrittene Programmierung _ Übungen _ Übungen V2 _ Übung 3 · GitLab_files/0(1).jpg" data-testid="js-lazy-loaded-content"></a></p>
+<h2 data-sourcepos="125:1-125:17" dir="auto">
+<a id="user-content-musterlösung" class="anchor" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/uebungen/uebungen-v2/uebung-3#musterl%C3%B6sung" aria-hidden="true"></a>Musterlösung</h2>
+<p data-sourcepos="127:1-127:102" dir="auto"><a data-sourcepos="127:1-127:102" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/loesungen/loesung-3/-/tree/master">Lösung</a></p>
+<p data-sourcepos="129:1-129:164" dir="auto"><a data-sourcepos="129:1-129:164" href="https://gitlab.hsrw.eu/lv-fortgeschrittene-programmierung/lv-fortgeschrittene-programmierung/-/wikis/%C3%9Cbungen"><gl-emoji title="black left-pointing triangle" data-name="arrow_backward" data-unicode-version="1.1">◀</gl-emoji> Zurück zur Aufgabenübersicht</a></p>
+</div>
+</div>
+
+</div>
+
+</main>
+</div>
+
+
+</div>
+</div>
+
+
+<script>
+//<![CDATA[
+if ('loading' in HTMLImageElement.prototype) {
+  document.querySelectorAll('img.lazy').forEach(img => {
+    img.loading = 'lazy';
+    let imgUrl = img.dataset.src;
+    // Only adding width + height for avatars for now
+    if (imgUrl.indexOf('/avatar/') > -1 && imgUrl.indexOf('?') === -1) {
+      const targetWidth = img.getAttribute('width') || img.width;
+      imgUrl += `?width=${targetWidth}`;
+    }
+    img.src = imgUrl;
+    img.removeAttribute('data-src');
+    img.classList.remove('lazy');
+    img.classList.add('js-lazy-loaded');
+    img.dataset.testid = 'js-lazy-loaded-content';
+  });
+}
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+gl = window.gl || {};
+gl.experiments = {};
+
+
+//]]>
+</script>
+
+
+
+
+<div><!----></div><div></div></body></html>

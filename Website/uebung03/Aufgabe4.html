@@ -20,7 +20,7 @@
             height: 30px;
             background-color: red;
             position: absolute;
-            transition: left 0.4s, top 0.4s; /* Reduced transition time for smoother movement */
+            transition: left 0.4s, top 0.4s; 
         }
     </style>
 </head>
@@ -34,21 +34,21 @@
     const box1 = document.getElementById("box1");
     const box2 = document.getElementById("box2");
 
-    // Event-Listener für das Klicken auf box1 hinzufügen
+    // Event-Listener für das Klicken auf box1 
     box1.addEventListener("click", function(e) {
-        // Event-Listener für die Mausbewegung hinzufügen, nachdem auf box1 geklickt wurde
+        // Event-Listener für die Mausbewegung nachdem box1 geklickt wurde
         document.addEventListener("mousemove", function(event) {
             const mouseX = event.pageX;
             const mouseY = event.pageY;
 
-            // Überprüfen Sie die Grenzen von box1
+            // Überprüfen die Grenzen von box1
             const box1Left = box1.offsetLeft;
             const box1Top = box1.offsetTop;
             const box1Right = box1Left + box1.offsetWidth-30;
             const box1Bottom = box1Top + box1.offsetHeight-30;
 
             if (mouseX >= box1Left && mouseX <= box1Right && mouseY >= box1Top && mouseY <= box1Bottom) {
-                // Die Maus ist innerhalb der Grenzen von box1
+                // Die Maus ist innerhalb der Grenzen von box1?
                 box2.style.left = mouseX - box1Left + 'px';
                 box2.style.top = mouseY - box1Top + 'px';
             }

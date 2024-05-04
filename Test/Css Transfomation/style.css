@@ -1,0 +1,63 @@
+body{
+    background-color: black;
+}
+
+#box1{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    font-size: 13em;
+    text-align: center;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#box1:hover{
+    animation-name: rotate;
+    animation-duration: 2s;
+}
+
+@keyframes slideLeft{
+    from{transform: translateX(300%)}
+}
+
+@keyframes slideRight{
+    to{transform: translateX(300%)}
+}
+
+@keyframes slideUp{
+    from{transform: translateY(300%)}
+}
+
+@keyframes slideDown{
+    to{transform: translateY(300%)}
+}
+
+@keyframes grow{
+    100%{transform: scale(2,2);}
+}
+
+@keyframes shrink{
+    50%{transform: scale(0.5,0.5);}
+}
+
+@keyframes rotate{
+    100%{transform: rotateZ(360deg)}
+}
+
+@keyframes fade{
+    50%{opacity: 0;}
+}
+
+@keyframes colorchange{
+    0%{background-color: red;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: yellowgreen;}
+    80%{background-color: green;}
+    100%{background-color: darkgreen;}
+}
+
+@keyframes glow{
+    50%{box-shadow: 0px 0px 50px yellow;}
+}

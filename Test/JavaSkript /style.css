@@ -1,0 +1,53 @@
+#Zeiger {
+    height: 50px;
+    width: 2px;
+    background-color: red;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+    animation-name: rotate;
+    animation-duration: 60s;
+    transform-origin: bottom;  
+    margin-left: 300px;
+}
+
+#Minute{
+    height: 50px;
+    width: 5px;
+    background-color: black;
+    animation-name: rotate;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+    transform-origin: bottom;  
+    margin-left: 300px;
+    margin-top: -100px;
+
+}
+
+#Stunde{
+    height: 30px;
+    width: 5px;
+    background-color: black;
+    animation-name: rotate;
+    animation-duration: 86400s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+    transform-origin: bottom;  
+    margin-left: 300px;
+    margin-top: -29px;
+}
+
+#kreis1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid black;
+    margin-left: 250px;
+    margin-top: -50px;
+ 
+}
+
+@keyframes rotate {
+    100% { transform: rotateZ(360deg); } /* Rotate the element */
+}

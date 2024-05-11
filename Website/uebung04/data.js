@@ -23,12 +23,12 @@ let articles = [
     autor: "Herbert B",
     teaser: "Das ist ein weiterer Test Artikel",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    tags: []
+    tags: ["Webdesign"]
 },
    ];
 
 
-
+//Code für Sidebar
    let sidebar =`
    <h3>Seitenleiste</h3>
    <form>
@@ -83,6 +83,7 @@ let articles = [
    `;
 
 
+   
 let articleElement = document.getElementById("meinArtikel");
 let ueberschrift = document.getElementById("ueberschrift").innerText;
 let datum = document.getElementById("datum").innerText.replace("Datum: ", "");

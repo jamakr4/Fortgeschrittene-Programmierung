@@ -25,73 +25,59 @@
 
       <main>
 
-    <form action="">
+    <form id="articleForm">
 
 
-      <div class="row g-3 align-items-center">
-        <div class="col-auto">
-          <label for="inputPassword6" class="col-form-label">Überschrift</label>
-        </div>
-        <div class="col-auto">
-          <input type="text"  class="form-control">
-        </div>
-        <div class="col-auto">
-        </div>
-      </div>
+      <div class="container">
+        <form id="articleForm">
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="inputTitle" class="col-form-label">Überschrift</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" id="inputTitle" class="form-control">
+                </div>
+            </div>
 
-      <br>
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="inputAuthor" class="col-form-label">Autor</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" id="inputAuthor" class="form-control">
+                </div>
+            </div>
 
-      <div class="row g-3 align-items-center">
-        <div class="col-auto">
-          <label for="inputPassword6" class="col-form-label">Autor</label>
-        </div>
-        <div class="col-auto">
-          <input type="text"  class="form-control">
-        </div>
-        <div class="col-auto">
-        </div>
-      </div>
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="inputDate" class="col-form-label">Datum</label>
+                </div>
+                <div class="col-auto">
+                    <input type="date" id="inputDate" class="form-control">
+                </div>
+            </div>
 
-      <br>
+            <div class="mb-3">
+                <label for="inputTeaser" class="form-label">Teaser Text</label>
+                <textarea class="form-control" id="inputTeaser" rows="3"></textarea>
+            </div>
 
-      <div class="row g-3 align-items-center">
-        <div class="col-auto">
-          <label for="inputPassword6" class="col-form-label">Datum</label>
-        </div>
-        <div class="col-auto">
-          <input type="date"  class="form-control">
-        </div>
-        <div class="col-auto">
-        </div>
-      </div>
+            <div>
+                <label for="inputArticle" class="form-label">Artikel</label>
+                <textarea class="form-control" id="inputArticle" rows="10"></textarea>
+            </div>
 
-        <br><br>
-
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Teaser Text</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-
-          <div>
-            <label for="exampleFormControlTextarea1" class="form-label">Artikel</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-          </div>
-
-        <br><br>
-
-
-        <div class="row g-3 align-items-center">
-          <div class="col-auto">
-            <label for="inputPassword6" class="col-form-label">Tags</label>
-          </div>
-          <div class="col-auto">
-            <input type="text"  class="form-control">
-          </div>
-          <div class="col-auto">
-            <button type="button" class="btn btn-primary">Senden</button>
-          </div>
-        </div>
-        
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="inputTags" class="col-form-label">Tags</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" id="inputTags" class="form-control">
+                </div>
+                <div class="col-auto">
+                    <button type="button" id="submitArticle" class="btn btn-primary">Senden</button>
+                </div>
+            </div>
 
          
     </form> 
@@ -154,5 +140,29 @@
         <a href="impressum.html">Impressum</a>
         <a href="kontakt.html">Kontakt</a>
     </footer>
+
+
+    <script>
+      document.getElementById("submitArticle").addEventListener("click", function() {
+          var title = document.getElementById("inputTitle").value;
+          var author = document.getElementById("inputAuthor").value;
+          var date = document.getElementById("inputDate").value;
+          var teaser = document.getElementById("inputTeaser").value;
+          var text = document.getElementById("inputArticle").value;
+          var tags = document.getElementById("inputTags").value.split(",").map(tag => tag.trim());
+          
+          var newArticle = {
+              ueberschrift: title,
+              datum: date,
+              autor: author,
+              teaser: teaser,
+              text: text,
+              tags: tags
+          };
+
+          // Hier können Sie die Logik zum Hinzufügen des neuen Artikels zum Array `articles` einfügen
+          console.log("Neuer Artikel:", newArticle);
+      });
+  </script>
 </body>
 </html>

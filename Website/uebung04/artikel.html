@@ -9,6 +9,7 @@
 <body>
     <header>
         <h1><a href="index.html">FP Blog </a></h1><br>
+        <div>und das ist ein dynamisch eingehängtes Element</div>
     </header>
 
     <article id="meinArtikel">
@@ -96,45 +97,16 @@
         <a href="kontakt.html">Kontakt</a>
     </footer>
 
+    <script src="blog.js" defer></script>
     <script>
-
-    let article = {
-    ueberschrift: "",
-    datum: "",
-    autor: "",
-    teaser: "",
-    text: "",
-    tags: []
-};
-
-let articleElement = document.getElementById("meinArtikel");
-let ueberschrift = document.getElementById("ueberschrift").innerText;
-let datum = document.getElementById("datum").innerText.replace("Datum: ", "");
-let autor = document.getElementById("autor").innerText.replace("Autor: ", "");
-let teaser = document.getElementById("teaser").innerText.replace("Einleitung: ", "");
-let text = document.getElementById("text").innerText.replace("Text: ", "");
-let tags = [];
-document.querySelectorAll("#tags li").forEach(tagElement => {
-    tags.push(tagElement.innerText);
-});
-
-let newArticle = {
-    ueberschrift: ueberschrift,
-    datum: datum,
-    autor: autor,
-    teaser: teaser,
-    text: text,
-    tags: tags
-};
-
-articles.push(newArticle);
+        
     </script>
 </body>
 </html>
 
 
 <!-- Ausgabe aus Konsole
-    
+
 console.log("Überschrift:", newArticle.ueberschrift);
 console.log("Überschrift:", newArticle.datum);
 console.log("Überschrift:", newArticle.autor);

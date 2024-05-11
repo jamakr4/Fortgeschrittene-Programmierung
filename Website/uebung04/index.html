@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <body onload="initPage();"></body>
     <link rel="stylesheet" href="blog.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,92 +39,12 @@
      
 
     <main>
-
-
         <div class="container text-center">
             <div class="row row-cols-">
-                <article>
-                    <div><p><h3>Div Element in Html</h3></p>  <!-- Überschrift --> 
-             
-                     <p><h6>12.4.2024, Jan Krausch</h6></p>         <!-- Datum, Autor -->
-             
-                     <div><h6>                         <!-- Text -->
-                         <p>Das div-Element in HTML wird verwendet, um Abschnitte oder Container in einer Webseite zu definieren. 
-                         Es steht für "division" oder "Teil". Hier sind einige Schlüsselkonzepte:</p>
-             
-                         <p>1. Syntax: Ein div-Element wird mit einem Start-Tag div und einem optionalen End-Tag verwendet.</p>
-             
-                         <p>2. Container: div fungiert als Container, der andere HTML-Elemente gruppieren kann. Du kannst beliebige andere HTML-Elemente innerhalb eines div platzieren, einschließlich Text, Bilder, Links, andere div-Elemente usw. </p>
-                         
-                         <p>3. Styling und Layout: div-Elemente werden oft verwendet, um Abschnitte einer Webseite zu strukturieren und zu gestalten. Sie können mit CSS formatiert werden, um Größe, Position, Farbe und andere visuelle Eigenschaften anzupassen.</p>
-                         
-                         <p>4. JavaScript und Interaktivität: div-Elemente können als Container für interaktive Elemente verwendet werden, die durch JavaScript oder andere Skriptsprachen dynamisch verändert werden können.</p>
-                         
-                         <p>5. Semantik: Obwohl div-Elemente keine spezifische semantische Bedeutung haben, werden sie häufig verwendet, um verschiedene Abschnitte einer Webseite zu gruppieren und zu organisieren. Es ist wichtig, div-Elemente sinnvoll zu verwenden, um die Struktur deiner Webseite klar zu gestalten und die Lesbarkeit des Codes zu verbessern.</p>
-                         
-                         <p>Zusammenfassend ist das div-Element ein vielseitiges Werkzeug, das in HTML verwendet wird, um Abschnitte einer Webseite zu gruppieren, zu strukturieren und zu gestalten. Es ist ein grundlegendes Element in der Webentwicklung und wird in Kombination mit CSS und JavaScript verwendet, um ansprechende und interaktive Webseiten zu erstellen.</p>
-                     </h6></div>
-             
-                     <p><a href="teilenEmail.html" target="_blank">Teilen via Email </a>|
-                         <a href="https://www.facebook.com/sharer/sharer.php?u=XXXXXXXXX" target="_blank">Artikel bei Facebook teilen </a>|
-                         <a href="https://twitter.com/intent/tweet?url=XXXXXXXXX&text=Check this out" target="_blank">Artikel bei Twitter teilen</a></p>    
-             
-                     <h6>Tags <a href="tagliste.html"> #div</a> <a href="tagliste.html">#tutorial</a> <a href="tagliste.html">#coding</a></a></h6>      <!-- Tags -->
-             
-                     <h6>Folgt mir gerne bei
-                     <a href="https://www.instagram.com/">Instagram </a>|        <!-- SocialMedia Links -->
-                     <a href="https://twitter.com/">Twitter </a>|
-                     <a href="https://www.facebook.com/">Facebook</a></h6>
-             
-                     <img src="medien/bild.png" width="200" height="150">      <!-- Bild Verlinkung zum Medienverzeichnis -->
-                  </article>
-
+              <div id="inhalt"></div>
             </div>
           </div>
-
-          <br><br><br><br><br><br><br><br><br>
-
-<div class="container text-center">
-    <div class="row row-cols-12">
-        <article>
-            <div><p><h3>Div Element in Html</h3></p>  <!-- Überschrift --> 
-     
-             <p><h6>12.4.2024, Jan Krausch</h6></p>         <!-- Datum, Autor -->
-     
-             <p><h5>Wie Implementiere ich das Div Element in Html?</h5></p></div>                   <!-- Teaser -->
-     
-             <div><h6>                         <!-- Text -->
-                 <p>Das div-Element in HTML wird verwendet, um Abschnitte oder Container in einer Webseite zu definieren. 
-                 Es steht für "division" oder "Teil". Hier sind einige Schlüsselkonzepte:</p>
-     
-                 <p>1. Syntax: Ein div-Element wird mit einem Start-Tag div und einem optionalen End-Tag verwendet.</p>
-     
-                 <p>2. Container: div fungiert als Container, der andere HTML-Elemente gruppieren kann. Du kannst beliebige andere HTML-Elemente innerhalb eines div platzieren, einschließlich Text, Bilder, Links, andere div-Elemente usw. </p>
-                 
-                 <p>3. Styling und Layout: div-Elemente werden oft verwendet, um Abschnitte einer Webseite zu strukturieren und zu gestalten. Sie können mit CSS formatiert werden, um Größe, Position, Farbe und andere visuelle Eigenschaften anzupassen.</p>
-                 
-                 <p>4. JavaScript und Interaktivität: div-Elemente können als Container für interaktive Elemente verwendet werden, die durch JavaScript oder andere Skriptsprachen dynamisch verändert werden können.</p>
-                 
-                 <p>5. Semantik: Obwohl div-Elemente keine spezifische semantische Bedeutung haben, werden sie häufig verwendet, um verschiedene Abschnitte einer Webseite zu gruppieren und zu organisieren. Es ist wichtig, div-Elemente sinnvoll zu verwenden, um die Struktur deiner Webseite klar zu gestalten und die Lesbarkeit des Codes zu verbessern.</p>
-                 
-                 <p>Zusammenfassend ist das div-Element ein vielseitiges Werkzeug, das in HTML verwendet wird, um Abschnitte einer Webseite zu gruppieren, zu strukturieren und zu gestalten. Es ist ein grundlegendes Element in der Webentwicklung und wird in Kombination mit CSS und JavaScript verwendet, um ansprechende und interaktive Webseiten zu erstellen.</p>
-             </h6></div>
-     
-             <p><a href="teilenEmail.html" target="_blank">Teilen via Email </a>|
-                 <a href="https://www.facebook.com/sharer/sharer.php?u=XXXXXXXXX" target="_blank">Artikel bei Facebook teilen </a>|
-                 <a href="https://twitter.com/intent/tweet?url=XXXXXXXXX&text=Check this out" target="_blank">Artikel bei Twitter teilen</a></p>    
-     
-             <h6>Tags <a href="tagliste.html"> #div</a> <a href="tagliste.html">#tutorial</a> <a href="tagliste.html">#coding</a></a></h6>      <!-- Tags -->
-     
-             <h6>Folgt mir gerne bei
-             <a href="https://www.instagram.com/">Instagram </a>|        <!-- SocialMedia Links -->
-             <a href="https://twitter.com/">Twitter </a>|
-             <a href="https://www.facebook.com/">Facebook</a></h6>
-     
-             <img src="medien/bild.png" width="200" height="150">      <!-- Bild Verlinkung zum Medienverzeichnis -->
-          </article>
-    </div>
-</div>
+       </div>
     </main>
 
 
@@ -185,6 +106,22 @@
         <a href="kontakt.html">Kontakt</a>
     </footer>
 
+<script src="data.js"></script>
+<script src="blog.js"></script>
+<script>
+function initPage() {
+	// Artikel erzeugen
+	
+	// DOM-Knoten für den Inhalt holen (<main...>)
+	var main = document.getElementById('inhalt');
+	
+	// Array durchlaufen, jeder Eintrag ist ein Blogeintrag-Objekt
+	for (var i = 0; i < articles.length; i++) {
+		//und Artikel einhängen
+		main.appendChild(createArticle(articles[i]));
+	}
+};
+</script>
     
 </body>
 </html>

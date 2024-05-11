@@ -28,6 +28,61 @@ let articles = [
    ];
 
 
+
+   let sidebar =`
+   <h3>Seitenleiste</h3>
+   <form>
+       <div class="mb-3">
+         <label for="exampleInputEmail1" class="form-label">Email Adresse</label>
+         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+       </div>
+       <div class="mb-3">
+         <label for="exampleInputPassword1" class="form-label">Passwort</label>
+         <input type="password" class="form-control" id="exampleInputPassword1">
+       </div>
+       <button type="submit" class="btn btn-primary">Einloggen</button>
+     </form>
+
+     <br>
+
+<form class="d-flex" role="search">
+   <input class="form-control me-2" type="search" placeholder="Suchen" aria-label="Search">
+   <button class="btn btn-outline-success" type="submit">Suchen</button>
+ </form>
+
+ <br>
+
+ <div class="dropdown">
+   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+     Monatsliste
+   </button>
+   <ul class="dropdown-menu">
+     <li><button class="dropdown-item" type="button">Januar</button></li>
+     <li><button class="dropdown-item" type="button">Februar</button></li>
+     <li><button class="dropdown-item" type="button">März</button></li>
+     <li><button class="dropdown-item" type="button">April</button></li>
+     <li><button class="dropdown-item" type="button">Mai</button></li>
+     <li><button class="dropdown-item" type="button">Juni</button></li>
+     <li><button class="dropdown-item" type="button">Juli</button></li>
+     <li><button class="dropdown-item" type="button">August</button></li>
+     <li><button class="dropdown-item" type="button">September</button></li>
+     <li><button class="dropdown-item" type="button">Oktober</button></li>
+     <li><button class="dropdown-item" type="button">November</button></li>
+     <li><button class="dropdown-item" type="button">Dezember</button></li>
+   </ul>
+ </div>
+
+<br>
+
+ <div>
+   <h5>Tag Cloud:
+   <a href="tagliste.html"> #div</a> |
+   <a href="tagliste.html">#tutorial</a> |
+   <a href="tagliste.html">#coding</a></a></h5> 
+</div>
+   `;
+
+
 let articleElement = document.getElementById("meinArtikel");
 let ueberschrift = document.getElementById("ueberschrift").innerText;
 let datum = document.getElementById("datum").innerText.replace("Datum: ", "");

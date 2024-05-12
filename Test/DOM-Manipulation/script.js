@@ -66,3 +66,6 @@ function te9() {
     "datum": "",
     "text": ""
 }];
+
+var jsonArticle = JSON.stringify(article);// --> Umwandeln von Obbjekt zu Zeichenkette
+var artcile2 = JSON.parse(jsonArticle); // Zeichenkette zu Objekt

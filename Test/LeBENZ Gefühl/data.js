@@ -72,6 +72,7 @@ const sidebar =`
    `;
 
 
+   
 var artikel = {
 id:``,
 ueberschrift:"",

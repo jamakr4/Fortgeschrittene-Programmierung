@@ -58,6 +58,8 @@ function insertContent() //Laden von Top + Siedebar + footer
 	var foot = document.querySelector("footer");
 	foot.innerHTML = footer;
 
+	createTagCloud(articles) // TagCloud erstellen
+
 	console.log("Topbar, Sidebar & Footer geladen"); // Debugging Kommentar
 }
 
@@ -84,4 +86,91 @@ function loadArtikelById(id)
 		main.appendChild(newtext);
 		console.log(errorMessage);
 	}
+}
+
+function getArticleByTag(tag) {
+   
+    var result = [];
+    for (var i = 0; i < articles.length; i++) 
+		{
+        for (var k = 0; k < articles[i].tags.length; k++) 
+			{
+            if (articles[i].tags[k] === tag) 
+				{
+                result.push(articles[i]);
+            }
+        }
+    }
+    console.log("getArticleByTag ausgeführt");
+    console.log(result.toString());
+    return result;
+
+
+//var t = getArticleByTag("c-klasse");
+//console.log(t); 
+}
+
+
+function createTagCloud(articles) 
+{
+    var result = [];
+	//Array mit alle Tags 1x erstellen
+    for (var i = 0; i < articles.length; i++) 
+		{
+        for (var k = 0; k < articles[i].tags.length; k++) 
+			{
+            // Duplikate filtern
+            if (!result.includes(articles[i].tags[k])) 
+				{
+                result.push(articles[i].tags[k]);
+            }
+        }
+    }
+    console.log("createTagCloud executed");
+    console.log(result);
+    
+    // Tags ins DOM einfügen
+    var tagCloud = document.getElementById("tagCloud");
+    for (var a = 0; a < result.length; a++) 
+		{
+        var tagSpan = document.createElement("span");
+        tagSpan.textContent = result[a] + "    ";
+        tagSpan.className = "tag";
+
+        //Neue Seite via Klick auf TagCloud aufrufen
+        tagSpan.onclick = function() 
+		{
+            var url = "suchergebnis.html?";
+			var newURL = url + "tag=" +   this.textContent;
+			window.location.href = newURL;
+			console.log(newURL);
+            
+        };
+        tagCloud.appendChild(tagSpan);
+    }
+}
+
+function loadArticleByTag() 
+{
+    var url = window.location.href;
+    var queryString = url.split('?')[1];
+
+    // Parse the query string using URLSearchParams
+    var searchParams = new URLSearchParams(queryString);
+
+    // Get the value of the "tag" parameter
+    var tag = searchParams.get("tag");
+
+    // Find articles with the specified tag
+    var articlesWithTag = articles.filter(function(article) {
+        return article.tags.includes(tag);
+    });
+
+    // Insert articles into the DOM
+    var container = document.getElementById("hier");
+    articlesWithTag.forEach(function(article) 
+	{
+        var articleElement = createArticle(article);
+        container.appendChild(articleElement);
+    });
 }

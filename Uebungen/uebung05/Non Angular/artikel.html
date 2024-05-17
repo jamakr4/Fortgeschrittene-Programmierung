@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function ()
 {
     // Footer + Header + Sidebar einfügen
     insertContent();
+    
 
     // auslesen Query String
     var url = window.location.href;
@@ -43,9 +44,7 @@ document.addEventListener("DOMContentLoaded", function ()
     var id = searchParams.get("id");
 
     loadArtikelById(id); // Artikel laden in blog.js
-
-
-
+    
     articleHeadings.forEach(function(heading) 
     {
     heading.addEventListener('click', function() 

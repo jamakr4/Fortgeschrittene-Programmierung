@@ -9,6 +9,7 @@ function loadPage()
 
 
 function createArticle(article) {
+
 	
 	//Tags in einen String laden
 	var tagString = '';
@@ -28,13 +29,12 @@ function createArticle(article) {
     var articleLink = 'artikel.html?id=' + articleId;
     
     // Artikelinhalt zusammenbauen
-    var newArticle = '<h2><a href="' + articleLink + '">' + 
-        article.ueberschrift + '</a></h2>' +
-        '<p>' + article.datum + ' ' + 
-        article.autor + '</p>' +
-        '<p><b>' + article.teaser + '</b></p>' +
-        '<p>' + article.text + '</p>' +
-        '<p>Tags: ' + tagString;
+	var newArticle = '<button onclick="window.location.href=\'artikelneu.html?id=' + article.id + '\'">bearbeiten</button>' +
+	'<h2><a href="' + articleLink + '">' + article.ueberschrift + '</a></h2>' +
+	'<p>' + article.datum + ' ' + article.autor + '</p>' +
+	'<p><b>' + article.teaser + '</b></p>' +
+	'<p>' + article.text + '</p>' +
+	'<p>Tags: ' + tagString + '</p>';
 		
     newArticle += '</p>';
     
@@ -59,4 +59,29 @@ function insertContent() //Laden von Top + Siedebar + footer
 	foot.innerHTML = footer;
 
 	console.log("Topbar, Sidebar & Footer geladen"); // Debugging Kommentar
+}
+
+function loadArtikelById(id) 
+{
+	// Find the article with the specified ID
+	var article = articles.find(function(article) 
+	{
+		return article.id === id;
+	});
+
+	var main = document.getElementById('inhalt');
+
+	if (article) 
+	{        
+		main.appendChild(createArticle(article)); // Article ins DOM einfügen 
+		console.log("Artikel geladen");
+	} 
+	else 
+	{
+		var main = document.getElementById('inhalt');
+		const errorMessage = "Artikel mit der ID '" + id + "' wurde nicht gefunden.";
+		const newtext = document.createTextNode(errorMessage);
+		main.appendChild(newtext);
+		console.log(errorMessage);
+	}
 }

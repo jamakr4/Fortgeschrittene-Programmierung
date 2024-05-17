@@ -106,9 +106,53 @@
               tags: tags
           };
 
-          // Hier können Sie die Logik zum Hinzufügen des neuen Artikels zum Array `articles` einfügen
           console.log("Neuer Artikel:", newArticle);
       });
+
+
+        //ID aus Query String holen
+        var url = window.location.href;
+        var queryString = url.split('?')[1];
+        var searchParams = new URLSearchParams(queryString);
+        var id = searchParams.get("id");
+        console.log(id); //Debugging
+
+        //basierend auf ID den Index des Artikels auslesen
+        var index = articles.findIndex(function(article) 
+        {
+        return article.id === id;
+        });
+
+
+        // Artkel basierend auf ID in Form laden
+        var title = document.getElementById("inputTitle");
+        var newText = articles[index].ueberschrift;
+        title.value = newText;
+
+        var title = document.getElementById("inputAuthor");
+        var newText = articles[index].autor;
+        title.value = newText;
+
+        var title = document.getElementById("inputDate");
+        var newText = articles[index].datum; //funktioniert nicht
+        title.value = newText;
+
+        var title = document.getElementById("inputTeaser");
+        var newText = articles[index].teaser;
+        title.value = newText;
+
+        var title = document.getElementById("inputArticle");
+        var newText = articles[index].text;
+        title.value = newText;
+
+        var title = document.getElementById("inputTags");
+        var newText = articles[index].tags.toString();
+        title.value = newText;
+        
+        console.log("Artikel in Form eingefügt"); //Debugging
+
+      
+
   </script>
 
   <footer></footer> <!-- Fußleiste -->

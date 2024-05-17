@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function ()
     // Get the value of the "id" parameter
     var id = searchParams.get("id");
 
-    loadArtikelById(id); // Artikel laden
+    loadArtikelById(id); // Artikel laden in blog.js
 
 
 
@@ -61,32 +61,6 @@ document.addEventListener("DOMContentLoaded", function ()
         window.location.href = 'artikel.html' + queryString;
     });
 });
-
-    
-    function loadArtikelById(id) 
-    {
-        // Find the article with the specified ID
-        var article = articles.find(function(article) 
-        {
-            return article.id === id;
-        });
-
-        var main = document.getElementById('inhalt');
-
-        if (article) 
-        {        
-            main.appendChild(createArticle(article)); // Article ins DOM einfügen 
-            console.log("Artikel geladen");
-        } 
-        else 
-        {
-            var main = document.getElementById('inhalt');
-            const errorMessage = "Artikel mit der ID '" + id + "' wurde nicht gefunden.";
-            const newtext = document.createTextNode(errorMessage);
-            main.appendChild(newtext);
-            console.log(errorMessage);
-        }
-    }
 });
 </script>
 

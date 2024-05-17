@@ -22,14 +22,15 @@ const sidebar =`
          <label for="exampleInputPassword1" class="form-label">Passwort</label>
          <input type="password" class="form-control" id="exampleInputPassword1">
        </div>
-       <button type="submit" class="btn btn-primary">Einloggen</button>
+       <button type="submit" href="artikel..html" class="btn btn-primary">Einloggen</button>
      </form>
 
      <br>
 
 <form class="d-flex" role="search">
    <input class="form-control me-2" type="search" placeholder="Suchen" aria-label="Search">
-   <button class="btn btn-outline-success" type="submit">Suchen</button>
+   <a href="artikel.html" <button class="btn btn-outline-success" type="submit">Suchen</button></a>
+   
  </form>
 
  <br>
@@ -72,7 +73,7 @@ const sidebar =`
    `;
 
 
-   
+
 var artikel = {
 id:``,
 ueberschrift:"",

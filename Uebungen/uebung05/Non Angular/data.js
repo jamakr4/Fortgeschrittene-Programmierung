@@ -84,7 +84,7 @@ tags:[],
 
 let articles = [
     {
-        id:`0`,
+        id:`1`,
         ueberschrift:"Die W205 C-Klasse: Eine Ikone der Eleganz und Leistung",
         datum:"12.2.2024",
         autor:"ChatGPT",
@@ -93,7 +93,7 @@ let articles = [
         tags: ["c-klasse", " w205 "," Mercedes"]
     },
 
-    {   id:`1`,
+    {   id:`2`,
         ueberschrift:"Der Mercedes-Benz W204: Eine Ikone des Stils und der Innovation",
         datum:"2.3.2024",
         autor:"ChatGPT",
@@ -103,7 +103,7 @@ let articles = [
         },
 
     {
-      id:`2`,
+      id:`3`,
       ueberschrift:"Die Mercedes-Benz W222 S-Klasse Coupé: Eleganz und Luxus in Perfektion",
       datum:"8.4.2024",
       autor:"ChatGPT",

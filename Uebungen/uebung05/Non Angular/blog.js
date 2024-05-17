@@ -7,33 +7,45 @@ function loadPage()
     console.log("Page geladen"); // Debugging Kommentar
 }
 
-function createArticle(article) 
-{
-	// Artikelinhalt zusammenbauen
-	var newArticle = '<h2><a href="artikel.html">' + 
-    article.ueberschrift + '</a></h2>' +
-		'<p>' + article.datum + ' ' + 
-        article.autor + '</p>' +
-		'<p><b>' + article.teaser + 
-        '</b></p>'
-		'</article>';
 
-    // Artikel Text einfügen
-	newArticle += '<p>' + article.text + '</p>' + '<p><b>' + "Tags: " + article.tags + '</b></p>';
+function createArticle(article) {
 	
-	// Tags einfügen
-	for (var i = 0; i < article.tags.length; i++) {
-		newArticle += '<a class="badge badge-pill badge-primary" href="tagliste.html">' + article.tags[i] + '</a> ';
+	//Tags in einen String laden
+	var tagString = '';
+	for (var i = 0; i < article.tags.length; i++) 
+		{
+		tagString += article.tags[i];
+		if (i !== article.tags.length - 1) 
+			{ 
+			tagString += ', ';
+		}
 	}
-	
-	// Artikelknoten erzeugen und zurückliefern
-	var art = document.createElement('article');
-	art.innerHTML = newArticle;
-	
-    console.log("Artikel geladen"); // Debugging Kommentar
-	return art;
-   
-};
+
+    // Die ID des Artikels abrufen
+    var articleId = article.id; // Query String wird in artikel.html erzeugt
+    
+    // Den Hyperlink zur Artikelseite mit der ID erstellen
+    var articleLink = 'artikel.html?id=' + articleId;
+    
+    // Artikelinhalt zusammenbauen
+    var newArticle = '<h2><a href="' + articleLink + '">' + 
+        article.ueberschrift + '</a></h2>' +
+        '<p>' + article.datum + ' ' + 
+        article.autor + '</p>' +
+        '<p><b>' + article.teaser + '</b></p>' +
+        '<p>' + article.text + '</p>' +
+        '<p>Tags: ' + tagString;
+		
+    newArticle += '</p>';
+    
+    // Artikelknoten erzeugen und zurückliefern
+    var art = document.createElement('article');
+    art.innerHTML = newArticle;
+    
+    console.log("Artikel geladen1"); // Debugging Kommentar
+    return art;
+}
+
 
 function insertContent() //Laden von Top + Siedebar + footer
 {

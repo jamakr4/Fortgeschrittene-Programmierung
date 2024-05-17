@@ -42,9 +42,27 @@ document.addEventListener("DOMContentLoaded", function ()
     // Get the value of the "id" parameter
     var id = searchParams.get("id");
 
-    loadArtikelById(id); // Load the article
-    
+    loadArtikelById(id); // Artikel laden
 
+
+
+    articleHeadings.forEach(function(heading) 
+    {
+    heading.addEventListener('click', function() 
+    {
+        // Die ID des geklickten Artikels abrufen
+        var articleId = article.id; //ID des angeklickten Artikels holen
+        console.log(articleId);
+        
+        // Den Query-String mit der ID erstellen
+        var queryString = '?id=' + articleId;
+        
+        // Zur Artikelseite mit dem QueryString weiterleiten
+        window.location.href = 'artikel.html' + queryString;
+    });
+});
+
+    
     function loadArtikelById(id) 
     {
         // Find the article with the specified ID

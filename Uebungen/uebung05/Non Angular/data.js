@@ -103,7 +103,7 @@ let articles = [
         },
 
     {
-      id:`3`,
+      id:``,
       ueberschrift:"Die Mercedes-Benz W222 S-Klasse Coupé: Eleganz und Luxus in Perfektion",
       datum:"8.4.2024",
       autor:"ChatGPT",

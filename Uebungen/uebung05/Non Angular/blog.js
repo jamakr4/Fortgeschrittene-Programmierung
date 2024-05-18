@@ -8,7 +8,8 @@ function loadPage()
 }
 
 
-function createArticle(article) {
+function createArticle(article) 
+{
 
 	
 	//Tags in einen String laden
@@ -65,7 +66,7 @@ function insertContent() //Laden von Top + Siedebar + footer
 
 function loadArtikelById(id)
 {
-	// Find the article with the specified ID
+	// Artikel basierend auf ID finden
 	var article = articles.find(function(article) 
 	{
 		return article.id === id;
@@ -90,7 +91,7 @@ function loadArtikelById(id)
 
 function getArticleByTag(tag) 
 {
-   
+   //Artikel basirend auf Tag finden
     var result = [];
     for (var i = 0; i < articles.length; i++) 
 		{
@@ -153,22 +154,64 @@ function createTagCloud(articles)
 
 function loadArticleByTag() 
 {
+	//Art
     var url = window.location.href;
     var queryString = url.split('?')[1];
 
-    // Parse the query string using URLSearchParams
+    // Paramter aus URl holen
     var searchParams = new URLSearchParams(queryString);
 
-    // Get the value of the "tag" parameter
+    // Wert aus Parameter lesen
     var tag = searchParams.get("tag");
 
-    // Find articles with the specified tag
+    // Artikel suchen
     var articlesWithTag = articles.filter(function(article) 
 	{
         return article.tags.includes(tag);
     });
 
-    // Insert articles into the DOM
+    // Artikel ins DOM einfügen
+    var container = document.getElementById("hier");
+
+    articlesWithTag.forEach(function(article) 
+	{
+        var articleElement = createArticle(article);
+        container.appendChild(articleElement);
+    });
+}
+
+function suchBegriff(event) 
+{
+	event.preventDefault(); // Default Verhalten des Submit-Buttons unterbinden (Seite neuladen)
+    const url = "suchergebnis.html?";
+    var begriff = document.getElementById("suchleiste").value;
+
+    var newUrl = url + "query=" + begriff;
+    window.location.href = newUrl;
+}
+
+
+function loadArticleOnContent ()
+{
+	var url = window.location.href;
+    var queryString = url.split('?')[1];
+
+    // QS aus URL holen
+    var searchParams = new URLSearchParams(queryString);
+
+    // Suchbegriff auslesen
+    var wort = searchParams.get("query");
+
+    // Artikel finden
+    
+var articlesWithTag = articles.filter(function(article) 
+{
+    return article.tags.includes(wort) || 
+           article.autor.includes(wort) || 
+           article.teaser.includes(wort) || 
+           article.text.includes(wort) || 
+           article.ueberschrift.includes(wort);
+});
     var container = document.getElementById("hier");
 
     articlesWithTag.forEach(function(article) 

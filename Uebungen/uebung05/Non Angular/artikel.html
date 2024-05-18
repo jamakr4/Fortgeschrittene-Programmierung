@@ -37,10 +37,10 @@ document.addEventListener("DOMContentLoaded", function ()
     var url = window.location.href;
     var queryString = url.split('?')[1];
 
-    // Parse the query string using URLSearchParams
+    // Der Query-String aus der URL extrahieren
     var searchParams = new URLSearchParams(queryString);
 
-    // Get the value of the "id" parameter
+    // Wert von Parameter ausleSen
     var id = searchParams.get("id");
 
     loadArtikelById(id); // Artikel laden in blog.js

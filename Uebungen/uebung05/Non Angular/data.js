@@ -28,8 +28,8 @@ const sidebar =`
      <br>
 
 <form class="d-flex" role="search">
-   <input class="form-control me-2" type="search" placeholder="Suchen" aria-label="Search">
-   <button class="btn btn-outline-success" type="submit">Suchen</button>
+   <input class="form-control me-2" id="suchleiste" type="search" placeholder="Suchen" aria-label="Search">
+   <button class="btn btn-outline-success" type="submit" onclick="suchBegriff(event)">Suchen</button>
  </form>
 
  <br>

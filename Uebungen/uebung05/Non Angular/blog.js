@@ -63,7 +63,7 @@ function insertContent() //Laden von Top + Siedebar + footer
 	console.log("Topbar, Sidebar & Footer geladen"); // Debugging Kommentar
 }
 
-function loadArtikelById(id) 
+function loadArtikelById(id)
 {
 	// Find the article with the specified ID
 	var article = articles.find(function(article) 
@@ -88,7 +88,8 @@ function loadArtikelById(id)
 	}
 }
 
-function getArticleByTag(tag) {
+function getArticleByTag(tag) 
+{
    
     var result = [];
     for (var i = 0; i < articles.length; i++) 
@@ -126,19 +127,19 @@ function createTagCloud(articles)
             }
         }
     }
-    console.log("createTagCloud executed");
+    console.log("createTagCloud ausgeführt");
     console.log(result);
     
     // Tags ins DOM einfügen
     var tagCloud = document.getElementById("tagCloud");
     for (var a = 0; a < result.length; a++) 
 		{
-        var tagSpan = document.createElement("span");
-        tagSpan.textContent = result[a] + "    ";
-        tagSpan.className = "tag";
+        var tagDiv = document.createElement("div");
+        tagDiv.textContent = result[a] + "    ";
+        tagDiv.className = "tag";
 
         //Neue Seite via Klick auf TagCloud aufrufen
-        tagSpan.onclick = function() 
+        tagDiv.onclick = function() 
 		{
             var url = "suchergebnis.html?";
 			var newURL = url + "tag=" +   this.textContent;
@@ -146,7 +147,7 @@ function createTagCloud(articles)
 			console.log(newURL);
             
         };
-        tagCloud.appendChild(tagSpan);
+        tagCloud.appendChild(tagDiv);
     }
 }
 
@@ -162,12 +163,14 @@ function loadArticleByTag()
     var tag = searchParams.get("tag");
 
     // Find articles with the specified tag
-    var articlesWithTag = articles.filter(function(article) {
+    var articlesWithTag = articles.filter(function(article) 
+	{
         return article.tags.includes(tag);
     });
 
     // Insert articles into the DOM
     var container = document.getElementById("hier");
+
     articlesWithTag.forEach(function(article) 
 	{
         var articleElement = createArticle(article);

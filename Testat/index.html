@@ -7,75 +7,194 @@
 </head>
 <body>
 
+    <button id="buttonLeft" class=controlButtons onclick="movePanLeft()"></button>
+    <button id="buttonRight" class=controlButtons onclick="movePanRight()"></button>
+
+    <div id="rightIndicator" class="directionIndicator">▶</div>
+    <div id="leftIndicator" class="directionIndicator">◀</div>
+
+    <!--<div id="line"></div> -->
+
     <div id="heading">Веселый повар</div>
 
     <div id="topBar"></div>
     <div id="leftBar"></div>
     <div id="rightBar"></div>
-
     <div id="pan"></div>
-
     <div id="bottomBar"></div>
+    <div id="bottomText"  >электроника</div>
+
+    <div id="cage1" class="cage"></div>
+    <div id="cage2" class="cage"></div>
+    <div id="cage3" class="cage"></div>
+    <div id="cage4" class="cage"></div>
+    <div id="cage5" class="cage"></div>
+
 
 <style>
 
 #heading 
 {
     text-align:center;
+    font-size:xx-large;
+    font-family: serif;
+    color: red;
 }
 
 #topBar
 {
     height: 10px;
     width: 800px;
-    background-color: black;
-    margin-left: 20%;
-    margin-top: 10%;
+    background-color: rgb(139, 77, 48);
+    margin-left: 270px;
+    margin-top: 100px;
 }
 
 #leftBar
 {
     height: 600px;
     width: 10px;
-    background-color: black;
-    margin-top: 0%;
-    margin-left: 20%;
+    background-color: rgb(139, 77, 48);
+    margin-left: 260px;
 }
 
 #rightBar
 {
+    
     height: 600px;
     width: 10px;
-    background-color: black;
-    margin-top: -44.43%;
-    margin-left: 78.5%;
+    background-color: rgb(139, 77, 48);
+    margin-top: -600px;
+    margin-left: 1070px;
 }
 
 #bottomBar
 {
-    position: fixed;
+    position: absolute;
     height: 10px;
     width: 800px;
-    background-color: black;
-    margin-left: 19.75%;
-    margin-top: -0.7%;
+    background-color: rgb(139, 77, 48);
+    margin-left: 270px;
 }
 
 #pan 
 {
     position: absolute;
-    top: 80%; 
-    left: 50%;
+    top: 700px; 
+    left: 728px;
     transform: translate(-50%, -50%); 
     height: 10px;
     width: 100px;
     background-color: black;
+}
+
+body
+{
+    background-color: #faebd7;
+}
+
+.controlButtons
+{
+    background-color: red;
+    border: 9px solid rgb(139, 77, 48);
+    border-radius: 50%;
+    padding: 40px;
+}
+
+#buttonRight
+{
+ position: absolute;
+ left: 1200px;
+ top: 500px;
+}
+
+#buttonLeft
+{
+ position: absolute;
+ left: 50px;
+ top: 500px;
+}
+
+#bottomText
+{
+ margin-top: 30px;
+ text-align: center;
+ font-size: xx-large;
+}
+
+.directionIndicator
+{
+    position: absolute;
+    font-size: xx-large;
+}
+#rightIndicator
+{
+ left: 1240px;
+ top: 458px;
+}
+
+#leftIndicator
+{
+ left: 70px;
+ top: 450px;
+}
+
+#line
+{
+ background-color: black;
+ position: absolute;
+ width: 10000px;
+ height: 10px;
+ top: 470px;
+}
+
+.cage
+{
+    position: absolute;
+    background-color: black;
+    border-radius: 25px;
+}
+
+#cage1 /* left*/
+{
+    width: 5px;
+    height: 700px;
+    top: 100px;
+    left: 240px;
+}
+
+#cage2 /* right*/
+{
+    width: 5px;
+    height: 700px;
+    top: 100px;
+    left: 1100px;
 }
 </style>
 
 
 
 <script>
+const pan = document.getElementById("pan");
+
+function movePanLeft()
+{
+var computedStyle = window.getComputedStyle(pan);
+var currentLeft = computedStyle.getPropertyValue('left');
+var t = parseInt(currentLeft, 10)
+
+pan.style.left = t - 100 + "px" ;
+}
+
+function movePanRight()
+{
+var computedStyle = window.getComputedStyle(pan);
+var currentLeft = computedStyle.getPropertyValue('left');
+var t = parseInt(currentLeft, 10)
+
+pan.style.left = t + 100 + "px" ;
+}
+
 
 </script>
     

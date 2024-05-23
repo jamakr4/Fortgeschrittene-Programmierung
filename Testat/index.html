@@ -20,15 +20,31 @@
     <div id="topBar"></div>
     <div id="leftBar"></div>
     <div id="rightBar"></div>
+
+    <div id="item1" class="item"></div>
+    <div id="item2" class="item"></div>
+    <div id="item3" class="item"></div>
+    <div id="item4" class="item"></div>
+
+    <div id="score" class="score">00</div>
+    <div id="scoreText" class="score">Оценка</div>
+    <div id="hz"></div>
+
+    <div id="life1" class="life"></div>
+    <div id="life2" class="life"></div>
+    <div id="life3" class="life"></div>
+    <div id="lifeText" class="life">жизнь</div>
+
     <div id="pan"></div>
+
     <div id="bottomBar"></div>
     <div id="bottomText"  >электроника</div>
 
-    <div id="cage1" class="cage"></div>
+   <!-- <div id="cage1" class="cage"></div>
     <div id="cage2" class="cage"></div>
     <div id="cage3" class="cage"></div>
     <div id="cage4" class="cage"></div>
-    <div id="cage5" class="cage"></div>
+    <div id="cage5" class="cage"></div> -->
 
 
 <style>
@@ -39,6 +55,11 @@
     font-size:xx-large;
     font-family: serif;
     color: red;
+}
+
+.disabled 
+{ 
+    opacity: 0.3; 
 }
 
 #topBar
@@ -80,11 +101,10 @@
 #pan 
 {
     position: absolute;
-    top: 700px; 
+    top: 650px; 
     left: 728px;
-    transform: translate(-50%, -50%); 
-    height: 10px;
-    width: 100px;
+    height: 15px;
+    width: 200px;
     background-color: black;
 }
 
@@ -127,6 +147,7 @@ body
     position: absolute;
     font-size: xx-large;
 }
+
 #rightIndicator
 {
  left: 1240px;
@@ -147,6 +168,95 @@ body
  height: 10px;
  top: 470px;
 }
+
+.item
+{
+ position: absolute;
+ background-color: black;
+ height: 20px;
+ width: 20px;
+ top: 300px;
+}
+
+#item1
+{
+ left: 350px;
+}
+
+#item2
+{
+ left: 550px;
+
+}
+
+#item3
+{
+ left: 750px;
+}
+
+#item4
+{
+ left: 980px;
+}
+
+.life
+{
+    font-family: 'Roboto Mono', monospace;
+    font-size: larger;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+
+#lifeText
+{
+    left: 300px;
+    top: 170px; 
+}
+
+#life1
+{
+    background-color: red;
+    left: 300px;
+    top: 200px;
+}
+
+#life2
+{
+    background-color: red;
+    left: 330px;
+    top: 200px;
+}
+
+#life3
+{
+    background-color: red;
+    left: 360px;
+    top: 200px;
+}
+
+.score
+{
+  position: absolute;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#score
+{
+    font-size: xx-large;
+    left: 1010px;
+    top: 200px; 
+}
+
+#scoreText
+{
+    font-size: larger;
+    left: 1000px;
+    top: 170px;
+}
+
+
+
 
 .cage
 {
@@ -175,26 +285,222 @@ body
 
 
 <script>
+
+var gamestatus = false;
+
+var life1 = true;
+var life2 = true;
+var life3 = true;
+
+var dropSpeed = 1; // Must increase over Time - use to display clock speed
+
+const item1 = document.getElementById("item1");
+const item2 = document.getElementById("item2");
+const item3 = document.getElementById("item3");
+const item4 = document.getElementById("item4");
+
 const pan = document.getElementById("pan");
+
+var moveRightLegal = true;
+var moveLeftLegal = true;
+
+const height = [240,330,400,450,500]; // enter heigth
+
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === ' ') //Spacebar
+    {
+        gamestatus = true;
+
+        item1.style.top = generateRandomPos();
+        item2.style.top = generateRandomPos();
+        item3.style.top = generateRandomPos();
+        item4.style.top = generateRandomPos();
+         
+
+        
+     
+       console.log('Start Game!');
+    }
+});
+
+
+
+
+
 
 function movePanLeft()
 {
-var computedStyle = window.getComputedStyle(pan);
-var currentLeft = computedStyle.getPropertyValue('left');
-var t = parseInt(currentLeft, 10)
 
-pan.style.left = t - 100 + "px" ;
-}
+moveRightLegal = true;
 
-function movePanRight()
+borderCheck();
+if (moveLeftLegal === true)
 {
 var computedStyle = window.getComputedStyle(pan);
 var currentLeft = computedStyle.getPropertyValue('left');
 var t = parseInt(currentLeft, 10)
 
-pan.style.left = t + 100 + "px" ;
+pan.style.left = t - 150 + "px" ;
 }
 
+else
+{
+ console.log("illegal move");
+}
+}
+
+
+
+
+
+function movePanRight()
+{
+
+    moveLeftLegal = true;
+
+borderCheck();
+if (moveRightLegal === true)
+{
+var computedStyle = window.getComputedStyle(pan); //pan.style.left?
+var currentLeft = computedStyle.getPropertyValue('left');
+var t = parseInt(currentLeft, 10)
+
+pan.style.left = t + 150 + "px" ;
+}
+else if (moveRightLegal = false)
+{
+ console.log("illegal move");
+}
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') 
+    {
+     movePanLeft();
+     console.log('Links!');
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') 
+    {
+     movePanRight();
+     console.log('Rechts!');
+    }
+});
+
+
+
+
+
+
+
+
+
+function generateRandomPos()
+{
+    var y = Math.floor(Math.random() * (5 - 0 + 1)) + 0;
+    console.log(y);
+    return height[y] + "px";
+}
+
+function returnCurrentXPosInt()
+{
+    var cp = parseInt(pan.style.left);
+    return cp;
+}
+
+
+function borderCheck()
+{
+   console.log(pan.style.left);
+   var cp = parseInt(pan.style.left);
+
+    if(cp >= 729)
+    {
+        moveRightLegal = false;
+        moveLeftLegal = true;
+        console.log(moveRightLegal);
+        console.log(moveLeftLegal);
+    }
+
+    else if (cp <= 427)
+    {
+        moveLeftLegal = false; 
+        moveRightLegal = true;
+
+        console.log(moveRightLegal);
+        console.log(moveLeftLegal);
+       
+    }
+
+    else
+    {
+        moveRightLegal = true;
+        moveLeftLegal = true; 
+
+        console.log(moveRightLegal);
+        console.log(moveLeftLegal);
+    }
+    
+}
+
+function crashDetection()
+{
+    //get y coord of items
+    //if below height x
+    crashReact();
+
+
+}
+
+function crashReact()
+{
+    if(life1 = true)
+    {
+        disableFirstLife();
+        life1 = false;
+        //animation Call?
+    }
+    else if(life2 = true)
+    {
+        disableSecondLife();
+        life12= false;
+    }
+    else if (life3 = true)
+    {
+        disableThirdLife();
+        life3 = false;
+        // Activate Endcard Gameover
+    }
+}
+
+function disableFirstLife()
+{
+    const life = document.getElementById("life3");
+    life.classList.add('disabled');
+}
+
+function disableSecondLife()
+{
+    const life = document.getElementById("life2");
+    disableDiv(currentLife);
+}
+
+function disableThirdLife()
+{
+    const life = document.getElementById("life1");
+    disableDiv(currentLife);
+}
+
+function increaseCounter() 
+{
+    const counter = document.getElementById("score");
+    var value = counter.innerHTML; 
+    value++; 
+    counter.innerHTML = value; 
+}
 
 </script>
     

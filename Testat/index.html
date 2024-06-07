@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Веселый повар</title>
+    <title>Funny Cook</title>
 </head>
 <body>
 
     <button id="buttonLeft" class=controlButtons onclick="movePanLeft()"></button>
     <button id="buttonRight" class=controlButtons onclick="movePanRight()"></button>
+    <button id="reset">New Game</button>
 
     <div id="rightIndicator" class="directionIndicator">▶</div>
     <div id="leftIndicator" class="directionIndicator">◀</div>
 
-    <!--<div id="line"></div> -->
-
-    <div id="heading">Веселый повар</div>
+    <div id="heading">Funny Cook </div>
 
     <div id="topBar"></div>
     <div id="leftBar"></div>
@@ -29,26 +28,19 @@
     <div id="item4" class="item"></div>
 
     <div id="score" class="score">00</div>
-    <div id="scoreText" class="score">Оценка</div>
-    <div id="hz">Ритм</div>
+    <div id="scoreText" class="score">Score</div>
+    <div id="hz">Speed</div>
     <div id="hzDisplay">xx</div>
 
     <div id="life1" class="life"></div>
     <div id="life2" class="life"></div>
     <div id="life3" class="life"></div>
-    <div id="lifeText" class="life">жизнь</div>
+    <div id="lifeText" class="life">Life</div>
 
     <div id="pan"></div>
 
     <div id="bottomBar"></div>
-    <div id="bottomText"  >электроника</div>
-
-   <!-- <div id="cage1" class="cage"></div>
-    <div id="cage2" class="cage"></div>
-    <div id="cage3" class="cage"></div>
-    <div id="cage4" class="cage"></div>
-    <div id="cage5" class="cage"></div> -->
-
+    <div id="bottomText">Press Space Bar to start the game</div>
 
 <style>
 
@@ -127,19 +119,32 @@ body
 #buttonRight
 {
  position: absolute;
- left: 1200px;
+ left: 1100px;
  top: 500px;
 }
 
 #buttonLeft
 {
  position: absolute;
- left: 50px;
+ left: 150px;
  top: 500px;
+}
+
+#reset
+{
+  position: absolute;
+  top: 150px;
+  left: 1120px;
+  background-color: #333;
+  color: #fff; 
+  border-radius: 5px; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #bottomText
 {
+position: absolute;
+left: 500px;
  margin-top: 30px;
  text-align: center;
  font-size: xx-large;
@@ -153,13 +158,13 @@ body
 
 #rightIndicator
 {
- left: 1240px;
+ left: 1140px;
  top: 458px;
 }
 
 #leftIndicator
 {
- left: 70px;
+ left: 170px;
  top: 450px;
 }
 
@@ -189,7 +194,6 @@ body
 #item2
 {
  left: 550px;
-
 }
 
 #item3
@@ -282,32 +286,7 @@ body
     font-size: xx-large;
 }
 
-
-.cage
-{
-    position: absolute;
-    background-color: black;
-    border-radius: 25px;
-}
-
-#cage1 /* left*/
-{
-    width: 5px;
-    height: 700px;
-    top: 100px;
-    left: 240px;
-}
-
-#cage2 /* right*/
-{
-    width: 5px;
-    height: 700px;
-    top: 100px;
-    left: 1100px;
-}
 </style>
-
-
 
 <script>
 
@@ -323,12 +302,12 @@ var life3 = true;
 
 var score = 0;
 
-var dropSpeed = 1; // Must increase over time - use to display clock speed
-
 const item1 = document.getElementById("item1");
 const item2 = document.getElementById("item2");
 const item3 = document.getElementById("item3");
 const item4 = document.getElementById("item4");
+
+const resetButton = document.getElementById("reset");
 
 const items = [
     document.getElementById('item1'),
@@ -531,6 +510,9 @@ document.addEventListener('keydown', (e) => {
         var hz = document.getElementById("hzDisplay");
         hz.innerHTML = 1;
 
+        var bt = document.getElementById("bottomText");
+        bt.innerHTML = "Game is running"
+
         drop();
         console.log('Start Game!');
     }
@@ -588,6 +570,10 @@ document.addEventListener('keydown', (e) => {
         movePanRight();
         console.log('Rechts!');
     }
+});
+
+resetButton.addEventListener('click', (e) => {
+  window.location.reload();
 });
 
 function generateRandomPos() 

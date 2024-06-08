@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUSH THE BUTTON</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #text {
+            font-size: 48px;
+            margin-right: 20px;
+        }
+
+        button {
+            font-size: 24px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="text"></div>
+        <button onclick="start()">PUSH THE BUTTON</button>
+    </header>
+
+    <script>
+        let currentDelay = 800;
+        let status = true;
+
+        async function start() {
+            while (status) 
+            {
+                let textElement = document.getElementById("text");
+                textElement.innerHTML += "PUSH THE BUTTON ";
+
+                currentDelay = Math.max(50, currentDelay / 1.02); // Reduzierung Delay 
+                await delay(currentDelay);
+            }
+        }
+
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+    </script>
+</body>
+</html>

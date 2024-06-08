@@ -1,0 +1,19 @@
+<br><br><br>
+
+<div id="b">
+  <ul class="artikel">
+    @for (a of Artikel; track a.id){
+      <a routerLink="/editor"><button> Bearbeiten</button></a>
+
+    <li>
+      <h1> <a routerLink="/artikel/{{ a.id }}">{{ a.ueberschrift }}</a></h1> 
+      <!--<h1> <a [routerLink]="['/artikel/']" [queryParams]="{ id: a.id }">{{ a.ueberschrift }}</a></h1>-->
+      <p> {{ a.datum }}</p>
+      <p> {{ a.autor }}</p>
+      <p>{{ a.teaser }}</p>
+      <p>{{ a.text }}</p>
+      <p>{{ a.tags.join(', ') }}</p>
+    </li>
+  }
+  </ul>
+</div>

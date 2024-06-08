@@ -1,0 +1,25 @@
+header {
+    position: fixed;
+    width: 100%;
+}
+aside {
+    float: right;
+    width: 15%; /* Anpassen je nach gewünschter Breite */
+    margin-top: 40px;
+    margin-right: 40px;
+}
+main {
+    float: left;
+    width: 70%; /* Anpassen je nach gewünschter Breite */
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black; /* Hintergrundfarbe anpassen */
+    padding: 10px; /* Abstand zum Inhalt anpassen */
+    text-align: center; /* Zentriert den Inhalt */
+}

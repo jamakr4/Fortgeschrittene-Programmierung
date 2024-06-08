@@ -1,0 +1,12 @@
+<br><br><br>
+<div *ngIf="selectedArtikel">
+    <h1>{{ selectedArtikel.ueberschrift | uppercase }}</h1>
+    <p>{{ selectedArtikel.datum }}</p>
+    <p>{{ selectedArtikel.autor }}</p>
+    <p>{{ selectedArtikel.teaser }}</p>
+    <p>{{ selectedArtikel.text }}</p>
+    <p>Tags: {{ selectedArtikel.tags.join(', ') }}</p>
+  </div>
+  <div *ngIf="!selectedArtikel">
+    <p>Artikel nicht gefunden.</p>
+  </div>

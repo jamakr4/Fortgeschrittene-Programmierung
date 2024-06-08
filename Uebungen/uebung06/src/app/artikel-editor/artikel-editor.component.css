@@ -1,0 +1,7 @@
+main{
+    float: left;
+    width: 70%; /* Anpassen je nach gewünschter Breite */
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}

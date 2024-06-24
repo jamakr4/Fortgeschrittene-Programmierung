@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="n1">
+    <select name="operator" id="op" >
+        <option>add</option>
+        <option>min</option>
+        <option>mul</option>
+        <option>div</option>
+    </select>
+    <input type="number" id="n2"> =
+    <span id="result"></span>
+    <br>
+
+    <button onclick=getResult()>Berechne</button> <!--Request-->
+    
+</body>
+</html>
+
+<script>
+    function getResult()
+    {
+      const n1 =  document.getElementById('n1').value;
+      const op =  document.getElementById('op').value;
+      const n2 =  document.getElementById('n2').value;
+
+      console.log(n1);
+      console.log(op);
+      console.log(n2);
+
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', 'http://localhost:3000/' + op + '/' + n1 + '/' + n2);
+      //xhr.open('GET', 'http://localhost:3000/mul/2/3');
+
+      xhr.onload = function() 
+      {
+        console.log(xhr.response);
+        document.getElementById('result').innerHTML = (xhr.response);
+      }
+
+      xhr.send();
+    
+    }
+</script>
